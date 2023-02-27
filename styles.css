@@ -1,0 +1,286 @@
+@font-face {
+    font-family: "jost-regular";
+    src: url('fonts/Jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "jost-medium";
+    src: url('fonts/Jost-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "jost-light";
+    src: url('fonts/Jost-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "lora-regular";
+    src: url('fonts/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "lora-semibold";
+    src: url('fonts/Lora-SemiBold.ttf') format('truetype');
+}
+
+:root {
+    --blue-10: #E0F8FF;
+    --blue-20: #B7E9FF;
+    --blue-30: #3AA7E4;
+    --blue-40: #196CCD;
+    --blue-green: #00C9D6;
+
+    --warm-10: #FFBF47;
+    --warm-100: #FFEFD0;
+    --warm-20: #EE8F39;
+    --warm-200: #FFE2CD;
+    --warm-30: #D45018;
+    --warm-300: #FFDEDC;
+
+    --jost-regular: "jost-regular";
+    --jost-medium: "jost-medium";
+    --jost-light: "jost-light";
+
+    --lora-regular: "lora-regular";
+    --lora-semibold: "lora-semibold";
+}
+
+
+
+/* General CSS styles (for every page) */
+
+body {
+    font-family: var(--jost-regular);
+    margin: 0rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0 1rem 0;
+}
+
+main {
+    margin-top: 123px;
+}
+
+.main-content {
+    margin: 123px 1.5rem 0 1.5rem;
+}
+
+figure, img {
+    width: 100%;
+}
+
+figure {
+    margin: auto;
+}
+
+#logo {
+    width: 3em;
+    display: block;
+    margin: auto;
+}
+
+nav a {
+    padding: 0.3rem;
+    font-size: 1.15rem;
+}
+
+nav a:hover {
+    font-size: 1.3rem;
+    font-family: var(--jost-medium);
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue-40);
+}
+
+nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle, #bubbly-vid, h2 {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+#cstudy-intro, #cstudy-outro, form {
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+h1, h2 {
+    font-family: var(--lora-semibold);
+    margin: 1rem 0 0 0;
+}
+
+p {
+    margin: .75rem 0;
+}
+
+img {
+    margin: .75rem 0 0 0;
+}
+
+footer, footer a {
+    background-color: var(--blue-40);
+    color: white;
+    text-align: center;
+}
+
+footer {
+    padding: .5rem 0 1rem 0;
+    margin-top: 2rem;
+}
+
+#resume {
+    text-decoration: underline;
+}
+
+#linkedin > img, #email > img {
+    width: 2rem;
+}
+
+#contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+/* Homepage CSS styles (for index.html) */
+
+#home-intro {
+    background-color: var(--blue-10);
+    padding-top: .25rem;
+    margin-top: 1rem;
+}
+
+#home-intro > div {
+    margin: 0 1.5rem;
+}
+
+#intro-tags p {
+    display: inline-block;
+    background-color: var(--blue-green);
+    border-radius: 4rem;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+}
+
+#projects {
+    margin: 2rem 1.5rem 0 1.5rem;;
+}
+
+#projects > div {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+#projects > div > div {
+    padding: .8rem;
+}
+
+#projects img {
+    margin: 0%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+#projects h2 {
+    margin: 0%;
+}
+
+.project-tags {
+    font-style: italic;
+}
+
+/* #project-1 {
+    margin-top: 1rem;
+} */
+
+.view-button, #submit-button {
+    display: inline-block;
+    border: 3px solid var(--blue-30);
+    border-radius: 4rem;
+    padding: 0.5rem 1.5rem;
+}
+
+#submit-button {
+    font-family: var(--jost-regular);
+    font-size: 1rem;
+    background-color: white;
+    color: var(--blue-40);
+}
+
+.view-button:hover, #submit-button:hover {
+    background-color: var(--blue-30);
+    color: white;
+}
+
+#cstudy-type, #cstudy-time {
+    margin: .5rem;
+}
+
+
+/* About page */
+
+#personal-pic {
+    border-radius: 6rem 1rem 6rem 1rem;
+    box-shadow: .3rem .3rem .5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Project Star */
+
+#project-star #cstudy-intro, #project-star #cstudy-outro {
+    background-color: var(--warm-100);
+}
+
+/* Project Bubbly */
+
+#project-bubbly #cstudy-intro, #project-bubbly #cstudy-outro {
+    background-color: var(--warm-200);
+}
+
+
+/* Project Ramen Bar */
+
+#project-ramen #cstudy-intro, #project-ramen #cstudy-outro {
+    background-color: var(--warm-300);
+}
+
+
+/* Project Unify */
+
+#project-unify #cstudy-intro, #project-unify #cstudy-outro {
+    background-color: var(--blue-20);
+}
+
+/* Contact page */
+
+form {
+    background-color: var(--warm-100);
+}
+
+input[type=text], #message {
+    width: 100%;
+    padding: .5rem 1rem;
+    margin: .5rem 0 1.2rem 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: var(--jost-regular);
+}
+
+#message {
+    padding-bottom: 5rem;
+}
