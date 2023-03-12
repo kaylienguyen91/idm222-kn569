@@ -80,7 +80,7 @@ figure {
 }
 
 #logo {
-    width: 3em;
+    width: 3rem;
     display: block;
     margin: auto;
 }
@@ -180,14 +180,18 @@ footer {
     margin: 2rem 1.5rem 0 1.5rem;;
 }
 
-#projects > div {
+/* #home-cstudy-grid {
+    display: grid;
+} */
+
+#home-cstudy-grid > div {
     margin-top: 2rem;
     border-radius: 1rem;
     box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, 0.2);
 }
 
-#projects > div > div {
-    padding: .8rem;
+#home-cstudy-grid > div > div {
+    padding: .8rem 1rem;
 }
 
 #projects img {
@@ -202,10 +206,6 @@ footer {
 .project-tags {
     font-style: italic;
 }
-
-/* #project-1 {
-    margin-top: 1rem;
-} */
 
 .view-button, #submit-button {
     display: inline-block;
@@ -283,4 +283,76 @@ input[type=text], #message {
 
 #message {
     padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 600px) {
+    
+    /* home page */
+    #home-intro {
+        padding: .5rem 0;
+    }
+    #home-intro > div {
+        margin: 0 3.5rem;
+    }
+    #projects {
+        margin: 2rem 5rem 0 5rem;;
+    }
+    #home-cstudy-grid > div > div {
+        padding: 1rem 1.3rem;
+    }
+    #home-intro img {
+        border-radius: 6rem 1rem 6rem 1rem;
+        width: 75%;
+        margin: 1rem auto;
+    }
+    #home-cstudy-grid > div {
+        margin-top: 2.5rem;
+    }
+    #contact-icons {
+        margin: .75rem 0;
+    }
+
+    /* all pages */
+    p {
+        margin: 1rem 0;
+    }
+    .view-button {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    .main-content {
+        margin: 123px 3.5rem 0 3.5rem;
+    }
+    #cstudy-intro, #cstudy-outro, form {
+        border-radius: 2rem;
+        padding: 1.3rem;
+    }
+    img {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #logo {
+        width: 3.5rem;
+    }
+    #home-intro {
+        display: flex;
+        padding: 1rem 3rem;
+        column-gap: 1.5rem;
+        align-items: center;
+    }
+    #home-intro > div {
+        margin: 0;
+    }
+    #home-intro img {
+        width: 50%;
+    }
+    
 }
