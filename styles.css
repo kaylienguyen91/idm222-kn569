@@ -400,14 +400,6 @@ input[type=text], #message {
     p {
         margin: 1.5rem 0;
     }
-    /* #intro-tags {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: start;
-    } */
-    /* #intro-tags p {
-        font-size: 1.2rem;
-    } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -417,9 +409,6 @@ input[type=text], #message {
     #intro-tags p {
         margin: 0.5rem;
     }
-    #home-intro img {
-        width: 60%;
-    }
     #home-intro {
         padding: 2rem 6rem;
     }
@@ -428,5 +417,24 @@ input[type=text], #message {
     }
     #projects img {
         width: 45%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #intro-tags {
+        display: flex;
+        flex-direction: column;
+    }
+    #intro-tags p {
+        width: fit-content;
+    }
+    p, .view-button {
+        font-size: 1.2rem;
+    }
+    #home-intro {
+        column-gap: 3rem;
+    }
+    #home-cstudy-grid > div > div {
+        padding: 1rem 3rem;
     }
 }
