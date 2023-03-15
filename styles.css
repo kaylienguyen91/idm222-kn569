@@ -110,12 +110,21 @@ nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstu
 
 figcaption {
     font-style: italic;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    margin: .75rem;
 }
 
 #cstudy-intro, #cstudy-outro, form {
     border-radius: 2rem;
     padding: 1rem;
+}
+
+.cstudy-sec-name {
+    margin-top: 2rem;
+}
+
+.project-page img {
+    margin-top: 1rem;
 }
 
 h1, h2 {
@@ -308,6 +317,11 @@ input[type=text], #message {
         margin: .75rem 0;
     }
 
+    /* About page */
+    #personal-pic {
+        width: 350px;
+    }
+
     /* all pages */
     p {
         margin: 1rem 0;
@@ -334,6 +348,12 @@ input[type=text], #message {
 @media screen and (min-width: 750px) {
     #projects {
         margin: 2rem 6.5rem 0 6.5rem;
+    }
+    #personal-pic {
+        width: 50%;
+    }
+    #star-logo {
+        width: 80%;
     }
 }
 
@@ -375,6 +395,27 @@ input[type=text], #message {
     #footer-intro p {
         margin: 1rem 0;
     }
+
+    /* About page */
+    #about-wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        font-size: 1.15rem;
+        line-height: 1.5;
+        margin: 0 3rem 2rem 3rem;
+    }
+    #personal-pic {
+        width: 30%;
+    }
+
+    /* All pages */
+    .project-page img {
+        width: 80%;
+    }
+    #star-poster {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -399,6 +440,27 @@ input[type=text], #message {
     }
     p {
         margin: 1.5rem 0;
+    }
+    .main-content {
+        margin: 123px auto auto auto;
+        max-width: 60rem;
+    }
+    .cstudy-sec-name {
+        margin-top: 3rem;
+    }
+    .project-page img {
+        margin-top: 2rem;
+    }
+    #star-logo {
+        width: 60%;
+    }
+    #star-quotes {
+        width: 70%;
+    }
+    #star-charts {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
     }
 }
 
