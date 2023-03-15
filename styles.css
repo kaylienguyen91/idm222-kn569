@@ -261,7 +261,9 @@ footer {
 #project-ramen #cstudy-intro, #project-ramen #cstudy-outro {
     background-color: var(--warm-300);
 }
-
+#ramen-figmalink div {
+    margin: 1rem;
+}
 
 /* Project Unify */
 
@@ -343,6 +345,14 @@ input[type=text], #message {
         display: block;
         margin: auto;
     }
+    #ramen-figmalink {
+        display: flex;
+        justify-content: space-around;
+    }
+    form {
+        padding: 2rem;
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (min-width: 750px) {
@@ -354,6 +364,9 @@ input[type=text], #message {
     }
     #star-logo {
         width: 80%;
+    }
+    form {
+        margin: 2rem 3rem;
     }
 }
 
@@ -413,8 +426,19 @@ input[type=text], #message {
     .project-page img {
         width: 80%;
     }
-    #star-poster {
+    #star-logo, #bubbly-inter-proto img, #ramen-gif {
+        width: 70%;
+    }
+    #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des {
         width: 100%;
+    }
+    #form-flex {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2rem;
+    }
+    #form-flex div {
+        width: 50%;
     }
 }
 
@@ -451,10 +475,10 @@ input[type=text], #message {
     .project-page img {
         margin-top: 2rem;
     }
-    #star-logo {
+    #star-logo, #ramen-gif {
         width: 60%;
     }
-    #star-quotes {
+    #star-quotes, #star-present {
         width: 70%;
     }
     #star-charts {
@@ -462,6 +486,19 @@ input[type=text], #message {
         justify-content: space-between;
         width: 50%;
     }
+    /* #bubbly-inter-proto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #bubbly-sketch3 {
+        grid-column: 1/3;
+        width: 50%;
+    }
+    #bubbly-sketch1, #bubbly-sketch2 {
+        width: 100%;
+        justify-self: stretch;
+    } */
 }
 
 @media screen and (min-width: 1280px) {
