@@ -63,8 +63,77 @@ header {
     padding: 1rem 0 1rem 0;
 }
 
+#logo {
+    width: 3rem;
+    display: block;
+    margin: auto;
+}
+
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    /* -webkit-transition: all 0.3s ease-in-out; */
+    transition: all 0.3s ease-in-out;
+    background-color: var(--blue-40);
+    border-radius: 10px;
+}
+
+.nav-menu {
+    display: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    list-style: none;
+    margin-top: .5rem;
+}
+
+.nav-menu a {
+    padding: 0.3rem;
+    font-size: 1.15rem;
+}
+
+.nav-menu a:hover {
+    font-size: 1.3rem;
+    font-family: var(--jost-medium);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+/* .invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+} */
+
 main {
-    margin-top: 123px;
+    margin-top: 80px;
 }
 
 .main-content {
@@ -79,32 +148,12 @@ figure {
     margin: auto;
 }
 
-#logo {
-    width: 3rem;
-    display: block;
-    margin: auto;
-}
-
-nav a {
-    padding: 0.3rem;
-    font-size: 1.15rem;
-}
-
-nav a:hover {
-    font-size: 1.3rem;
-    font-family: var(--jost-medium);
-}
-
-nav {
-    margin-top: 1rem;
-}
-
 a {
     text-decoration: none;
     color: var(--blue-40);
 }
 
-nav, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle, #bubbly-vid, h2 {
+.nav-menu, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle, #bubbly-vid, h2 {
     text-align: center;
 }
 
@@ -170,7 +219,7 @@ footer {
 #home-intro {
     background-color: var(--blue-10);
     padding-top: .25rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 #home-intro > div {
