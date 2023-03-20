@@ -362,7 +362,7 @@ input[type=text], #message {
     #personal-pic {
         width: 50%;
     }
-    #star-logo {
+    #star-logo, #star-quotes {
         width: 80%;
     }
     form {
@@ -426,7 +426,7 @@ input[type=text], #message {
     .project-page img {
         width: 80%;
     }
-    #star-logo, #bubbly-inter-proto img, #ramen-gif {
+    #star-logo, #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-gif {
         width: 70%;
     }
     #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des {
@@ -478,27 +478,44 @@ input[type=text], #message {
     #star-logo, #ramen-gif {
         width: 60%;
     }
-    #star-quotes, #star-present {
+    #star-present {
         width: 70%;
     }
     #star-charts {
         display: flex;
+        column-gap: 2rem;
         justify-content: space-between;
-        width: 50%;
-    }
-    /* #bubbly-inter-proto {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    #bubbly-sketch3 {
-        grid-column: 1/3;
-        width: 50%;
-    }
-    #bubbly-sketch1, #bubbly-sketch2 {
         width: 100%;
-        justify-self: stretch;
-    } */
+    }
+    #star-charts img, #star-wrapper1 > *, #ramen-wrapper1 > * {
+        width: 50%;
+    }
+    #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2 {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+    }
+    #star-wrapper1 {
+        flex-direction: row-reverse;
+    }
+    #bubbly-wrapper1, #bubbly-wrapper2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+    #bubbly-wrapper1 figure, #bubbly-wrapper2 figure {
+        grid-column: 2/4;
+    }
+    #star-quotes, #bubbly-cardsort, #bubbly-rebrand, #ramen-persona, #ramen-wrapper2 img {
+        width: 100%;
+    }
+    #bubbly-wrapper3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #bubbly-wrapper3 img {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 1280px) {
