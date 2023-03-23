@@ -98,12 +98,12 @@ header {
     margin-top: .5rem;
 }
 
-.nav-menu a {
+.nav-link {
     padding: 0.3rem;
     font-size: 1.15rem;
 }
 
-.nav-menu a:hover {
+.nav-link:hover {
     font-size: 1.3rem;
     font-family: var(--jost-medium);
 }
@@ -495,7 +495,7 @@ input[type=text], #message {
     #star-logo, #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-gif {
         width: 70%;
     }
-    #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des {
+    #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-persona, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des {
         width: 100%;
     }
     #form-flex {
@@ -553,7 +553,7 @@ input[type=text], #message {
         justify-content: space-between;
         width: 100%;
     }
-    #star-charts img, #star-wrapper1 > *, #ramen-wrapper1 > * {
+    #star-wrapper1 > *, #ramen-wrapper1 > * {
         width: 50%;
     }
     #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2 {
@@ -572,7 +572,7 @@ input[type=text], #message {
     #bubbly-wrapper1 figure, #bubbly-wrapper2 figure {
         grid-column: 2/4;
     }
-    #star-quotes, #bubbly-cardsort, #bubbly-rebrand, #ramen-persona, #ramen-wrapper2 img {
+    #star-quotes, #star-charts img, #bubbly-cardsort, #bubbly-rebrand, #ramen-persona, #ramen-wrapper2 img {
         width: 100%;
     }
     #bubbly-wrapper3 {
@@ -585,6 +585,15 @@ input[type=text], #message {
 }
 
 @media screen and (min-width: 1280px) {
+    .nav-wrapper {
+        margin: 0 8rem;
+    }
+    #logo {
+        width: 4rem;
+    }
+    .main-content {
+        margin: 96px auto auto auto;
+    }
     #intro-sentence {
         margin: 2rem 0;
     }
