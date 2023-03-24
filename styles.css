@@ -446,7 +446,7 @@ input[type=text], #message {
     #home-intro > div {
         margin: 0;
     }
-    #home-intro img {
+    #home-intro img, #form-flex div {
         width: 50%;
     }
     #home-cstudy-grid > div {
@@ -492,19 +492,16 @@ input[type=text], #message {
     .project-page img {
         width: 80%;
     }
-    #star-logo, #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-gif {
+    #star-logo, #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-gif, #unify-research, #unify-survey {
         width: 70%;
     }
-    #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-persona, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des {
+    #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-persona, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des, #unify-mapping, #unify-swot {
         width: 100%;
     }
     #form-flex {
         display: flex;
         justify-content: space-between;
         column-gap: 2rem;
-    }
-    #form-flex div {
-        width: 50%;
     }
 }
 
@@ -516,7 +513,7 @@ input[type=text], #message {
     #projects {
         margin: 2rem 5rem 0 5rem;
     }
-    #home-cstudy-grid > div {
+    #home-cstudy-grid > div, .cstudy-sec-name {
         margin-top: 3rem;
     }
     #home-cstudy-grid > div > div {
@@ -535,9 +532,6 @@ input[type=text], #message {
         margin: 80px auto auto auto;
         max-width: 60rem;
     }
-    .cstudy-sec-name {
-        margin-top: 3rem;
-    }
     .project-page img {
         margin-top: 2rem;
     }
@@ -553,8 +547,13 @@ input[type=text], #message {
         justify-content: space-between;
         width: 100%;
     }
-    #star-wrapper1 > *, #ramen-wrapper1 > * {
-        width: 50%;
+    #unify-wrapper4, #unify-wrapper5 {
+        display: flex;
+        width: 100%;
+    }
+    #unify-wrapper4 img, #unify-wrapper5 img {
+        margin: 0;
+        width: 100%;
     }
     #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2 {
         display: flex;
@@ -564,13 +563,16 @@ input[type=text], #message {
     #star-wrapper1 {
         flex-direction: row-reverse;
     }
-    #bubbly-wrapper1, #bubbly-wrapper2 {
+    #bubbly-wrapper1, #bubbly-wrapper2, #unify-wrapper1, #unify-wrapper2, #unify-wrapper3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2rem;
     }
-    #bubbly-wrapper1 figure, #bubbly-wrapper2 figure {
+    #bubbly-wrapper1 figure, #bubbly-wrapper2 figure, #unify-wrapper1 figure, #unify-wrapper2 figure, #unify-wrapper3 figure {
         grid-column: 2/4;
+    }
+    #unify-survey {
+        width: 80%;
     }
     #star-quotes, #star-charts img, #bubbly-cardsort, #bubbly-rebrand, #ramen-persona, #ramen-wrapper2 img {
         width: 100%;
@@ -579,7 +581,7 @@ input[type=text], #message {
         display: flex;
         flex-wrap: wrap;
     }
-    #bubbly-wrapper3 img {
+    #star-wrapper1 > *, #ramen-wrapper1 > *, #bubbly-wrapper3 img {
         width: 50%;
     }
 }
@@ -587,9 +589,6 @@ input[type=text], #message {
 @media screen and (min-width: 1280px) {
     .nav-wrapper {
         margin: 0 8rem;
-    }
-    #logo {
-        width: 4rem;
     }
     .main-content {
         margin: 96px auto auto auto;
