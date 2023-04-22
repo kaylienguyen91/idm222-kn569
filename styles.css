@@ -306,6 +306,10 @@ pre {
     background-color: var(--warm-100);
 }
 
+#star-quotes {
+    border-radius: 40px;
+}
+
 /* Project Bubbly */
 
 #project-bubbly #cstudy-intro, #project-bubbly #cstudy-outro {
