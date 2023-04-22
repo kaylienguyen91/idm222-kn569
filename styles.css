@@ -146,11 +146,11 @@ a {
     color: var(--blue-40);
 }
 
-.nav-menu, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, #subtitle, #bubbly-vid, h2 {
+.nav-menu, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, .code-caption, #subtitle, #bubbly-vid, h2 {
     text-align: center;
 }
 
-figcaption {
+figcaption, .code-caption {
     font-style: italic;
     font-size: 0.9rem;
     margin: .75rem;
@@ -264,11 +264,11 @@ footer {
 }
 
 #submit-button {
-    font-family: var(--jost-regular);
-    font-size: 1rem;
     background-color: white;
     color: var(--blue-40);
     cursor: pointer;
+    font-family: var(--jost-regular);
+    font-size: 1rem;
 }
 
 .view-button:hover, #submit-button:hover {
@@ -286,6 +286,18 @@ footer {
 #personal-pic {
     border-radius: 6rem 1rem 6rem 1rem;
     box-shadow: .3rem .3rem .5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Project Viet */
+
+pre {
+    background-color: var(--warm-100);
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.code-section > * {
+    margin-bottom: 2rem;
 }
 
 /* Project Star */

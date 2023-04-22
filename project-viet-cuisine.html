@@ -113,10 +113,30 @@
                     point, but I learned a lot along the way: how to organize variables and data properly, what is 
                     the right syntax for a particular function, how to incorporate multiple functions, conditions 
                     and loops in a logical way. </p>
-                <figure>
-                    <img src="portfolio-assets/case-study-viet-cuisine/code-dishdata.png" alt="Sample code showing how I organize the food data">
-                    <figcaption> I built a "database" to access the food's information more easily </figcaption>
-                </figure>
+                <div>
+                    <pre>
+                        <code>
+const dishData = [
+    {
+        name: "Pho",
+        intro: "A soup dish consisting of broth, rice noodles, herbs, and sliced meat (usually beef)",
+        description: "You are friendly and outgoing, known as 'the diplomat' in your friend group.",
+        image: 'image-asset/pho.png',
+        sound: 'sounds/pho.wav',
+        id: "pho",
+    },
+    {
+        name: "Spring rolls",
+        intro: "A refreshing appetizer made with shrimp, vegetables, herbs, and rice noodles wrapped in rice paper",
+        description: "You have a great sense of humor and love making people laugh.",
+        image: 'image-asset/spring-rolls.png',
+        sound: 'sounds/spring-rolls.wav',
+        id: "spring-rolls",
+}];
+                        </code>
+                    </pre>
+                    <p class="code-caption"> I built a "database" to access the food's information more easily </p>
+                </div>
             </div>
 
             <div>
@@ -131,10 +151,59 @@
                     method is what I ended up with: it loops through the data of foods’ information that I created 
                     beforehand to find the one matching the clicked button. This wasn’t a genius idea or an eureka 
                     moment but I was happy that I made an effort to shorten and optimize my code.</p>
-                <em> Since I already had repeated codes for each of 12 dishes in the database above and the first function below...</em>
-                <img src="portfolio-assets/case-study-viet-cuisine/code-function1.png" alt="The code to run the first function">
-                <em> ...I did't want to have another set of 12 code lines again. Thus I use <code>Array filter()</code> to avoid redundance.</em>
-                <img src="portfolio-assets/case-study-viet-cuisine/code-function2.png" alt="The code to run the second function">
+                <div class="code-section">
+                    <em> Since I already had repeated codes for each of 12 dishes in the database above and the first function below...</em>
+                    <pre>
+                        <code>
+function findBday(month, day) {
+    if ((month == 3 && day >= 21) || (month == 4 && day <= 20)) {
+        dish = "Che";
+    } else if ((month == 4 && day >= 21) || (month == 5 && day <= 20)) {
+        dish = "Broken rice";
+    } else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
+        dish = "Banh mi";
+    } else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
+        dish = "Banh cuon";
+    } else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
+        dish = "Bun bo Hue";
+    } else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
+        dish = "Bun cha";
+    } else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
+        dish = "Nem lui";
+    } else if ((month == 10 && day >= 23) || (month == 11 && day <= 22)) {
+        dish = "Banh xeo";
+    } else if ((month == 11 && day >= 23) || (month == 12 && day <= 21)) {
+        dish = "Pho";
+    } else if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
+        dish = "Egg coffee";
+    } else if ((month == 1 && day >= 20) || (month == 2 && day <= 19)) {
+        dish = "Spring rolls";
+    } else if ((month == 2 && day >= 20) || (month == 3 && day <= 20)) {
+        dish = "Phin coffee";
+    }
+    showDishDetail(dish)
+};
+                        </code>
+                    </pre>
+                    <em> ...I did't want to have another set of 12 code lines again. Thus I use <code>Array filter()</code> to avoid redundance.</em>
+                    <pre>
+                        <code>
+function showClickedDish(button) {
+    const food = button.id;
+    const mainDish = dishData.filter(
+        item => item.id === food
+    )[0]
+    console.log(mainDish)
+    dishImage.src = mainDish.image;
+    dishName.innerText = mainDish.name;
+    dishIntro.innerText = mainDish.intro;
+    dishDescrip.innerText = mainDish.description;
+
+    playsound(mainDish.sound);
+}
+                        </code>
+                    </pre>
+                </div>
             </div>
 
             <p id="cstudy-outro"> This first hand experience with front-end development gave me a big picture of 
