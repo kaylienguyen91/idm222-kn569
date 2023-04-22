@@ -197,7 +197,7 @@ footer {
     text-decoration: underline;
 }
 
-#linkedin > img, #email > img {
+#linkedin > img, #email > img, #github > img {
     width: 2rem;
 }
 
@@ -318,7 +318,7 @@ pre {
 #project-ramen #cstudy-intro, #project-ramen #cstudy-outro {
     background-color: var(--warm-300);
 }
-#ramen-figmalink div {
+#ramen-figmalink div, .viet-link div {
     margin: 1rem;
 }
 
@@ -405,6 +405,11 @@ input[type=text], #message {
     #ramen-figmalink {
         display: flex;
         justify-content: space-around;
+    }
+    .viet-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     form {
         padding: 2rem;
