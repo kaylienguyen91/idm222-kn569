@@ -300,6 +300,12 @@ pre {
     margin-bottom: 2rem;
 }
 
+.viet-note {
+    font-style: italic;
+    margin-top: 0;
+    text-align: center;
+}
+
 /* Project Star */
 
 #project-star #cstudy-intro, #project-star #cstudy-outro {
@@ -322,7 +328,7 @@ pre {
 #project-ramen #cstudy-intro, #project-ramen #cstudy-outro {
     background-color: var(--warm-300);
 }
-#ramen-figmalink div, .viet-link div {
+#ramen-figmalink div, .viet-link div, #star-paper {
     margin: 1rem;
 }
 
