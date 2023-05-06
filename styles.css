@@ -290,10 +290,22 @@ footer {
 
 /* Project Viet */
 
+#project-viet #cstudy-intro, #project-viet #cstudy-outro {
+    background-color: var(--warm-200);
+}
+
 pre {
     background-color: var(--warm-100);
-    margin: auto;
+    /* margin: auto; */
     padding: 0 2rem;
+    /* max-width: 100%; */
+    overflow: auto;
+}
+
+pre > code {
+    display: block;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 .code-section > * {
@@ -448,7 +460,7 @@ input[type=text], #message {
     #personal-pic {
         width: 50%;
     }
-    #star-logo, #star-quotes {
+    #star-logo, #star-quotes, #viet-intro-img, #viet-outro-img {
         width: 80%;
     }
     form {
@@ -515,10 +527,10 @@ input[type=text], #message {
     .project-page img {
         width: 80%;
     }
-    #star-logo, #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-gif, #unify-research, #unify-survey {
+    #star-logo, #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-gif, #unify-research, #unify-survey, #viet-intro-img, #viet-outro-img {
         width: 70%;
     }
-    #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-persona, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des, #unify-mapping, #unify-swot {
+    #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-persona, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des, #unify-mapping, #unify-swot, #viet-ui {
         width: 100%;
     }
     #form-flex {
@@ -558,7 +570,7 @@ input[type=text], #message {
     .project-page img {
         margin-top: 2rem;
     }
-    #star-logo, #ramen-gif {
+    #star-logo, #ramen-gif, #viet-intro-img, #viet-color {
         width: 60%;
     }
     #star-present {
@@ -578,7 +590,7 @@ input[type=text], #message {
         margin: 0;
         width: 100%;
     }
-    #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2 {
+    #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2, #viet-wrapper1 {
         display: flex;
         align-items: center;
         column-gap: 2rem;
@@ -604,7 +616,7 @@ input[type=text], #message {
         display: flex;
         flex-wrap: wrap;
     }
-    #star-wrapper1 > *, #ramen-wrapper1 > *, #bubbly-wrapper3 img {
+    #star-wrapper1 > *, #ramen-wrapper1 > *, #bubbly-wrapper3 img, #viet-wrapper1 img {
         width: 50%;
     }
 }
