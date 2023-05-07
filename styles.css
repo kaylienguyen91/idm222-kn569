@@ -101,7 +101,7 @@ header {
 .nav-link {
     padding: 0.3rem;
     font-size: 1.15rem;
-    transition: font-size 3s ease .5s;
+    transition: font-size .2s ease 0s;
 }
 
 .nav-link:hover {
