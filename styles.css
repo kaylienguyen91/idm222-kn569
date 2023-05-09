@@ -328,6 +328,10 @@ pre > code {
     border-radius: 40px;
 }
 
+#star-wrapper1 li {
+    font-family: var(--jost-medium);
+}
+
 /* Project Bubbly */
 
 #project-bubbly #cstudy-intro, #project-bubbly #cstudy-outro {
