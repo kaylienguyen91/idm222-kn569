@@ -61,6 +61,7 @@ header {
     width: 100%;
     background-color: white;
     padding: 1rem 0 1rem 0;
+    box-shadow: 0 5px 15px #EFEFEF;
 }
 
 #logo {
@@ -130,7 +131,7 @@ main {
 }
 
 .main-content {
-    margin: 80px 1.5rem 0 1.5rem;
+    margin: 100px 1.5rem 0 1.5rem;
 }
 
 figure, img {
@@ -308,10 +309,6 @@ pre > code {
     white-space: pre-wrap;
 }
 
-.code-section > * {
-    margin-bottom: 2rem;
-}
-
 .viet-note {
     font-style: italic;
     margin-top: 0;
@@ -338,6 +335,9 @@ pre > code {
     background-color: var(--warm-200);
 }
 
+video {
+    max-width: 100%;
+}
 
 /* Project Ramen Bar */
 

@@ -165,41 +165,7 @@ const dishData = [
                     method is what I ended up with: it loops through the data of foods’ information that I created 
                     beforehand to find the one matching the clicked button. This wasn’t a genius idea or an eureka 
                     moment but I was happy that I made an effort to shorten and optimize my code.</p>
-                <div class="code-section">
-                    <em> Since I already had repeated codes for each of 12 dishes in the database above and the first function below...</em>
-                    <pre>
-                        <code>
-function findBday(month, day) {
-    if ((month == 3 && day >= 21) || (month == 4 && day <= 20)) {
-        dish = "Che";
-    } else if ((month == 4 && day >= 21) || (month == 5 && day <= 20)) {
-        dish = "Broken rice";
-    } else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
-        dish = "Banh mi";
-    } else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
-        dish = "Banh cuon";
-    } else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
-        dish = "Bun bo Hue";
-    } else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
-        dish = "Bun cha";
-    } else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
-        dish = "Nem lui";
-    } else if ((month == 10 && day >= 23) || (month == 11 && day <= 22)) {
-        dish = "Banh xeo";
-    } else if ((month == 11 && day >= 23) || (month == 12 && day <= 21)) {
-        dish = "Pho";
-    } else if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
-        dish = "Egg coffee";
-    } else if ((month == 1 && day >= 20) || (month == 2 && day <= 19)) {
-        dish = "Spring rolls";
-    } else if ((month == 2 && day >= 20) || (month == 3 && day <= 20)) {
-        dish = "Phin coffee";
-    }
-    showDishDetail(dish)
-};
-                        </code>
-                    </pre>
-                    <em> ...I did't want to have another set of 12 code lines again. Thus I use <code>Array filter()</code> to avoid redundance.</em>
+                <div>
                     <pre>
                         <code>
 function showClickedDish(button) {
@@ -207,7 +173,6 @@ function showClickedDish(button) {
     const mainDish = dishData.filter(
         item => item.id === food
     )[0]
-    console.log(mainDish)
     dishImage.src = mainDish.image;
     dishName.innerText = mainDish.name;
     dishIntro.innerText = mainDish.intro;
@@ -217,6 +182,7 @@ function showClickedDish(button) {
 }
                         </code>
                     </pre>
+                    <p class="code-caption"> I used <code>Array filter()</code> to avoid redundance.</p>
                 </div>
 
                 <div class="viet-link">
