@@ -1,19 +1,4 @@
 @font-face {
-    font-family: "jost-regular";
-    src: url('fonts/Jost-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "jost-medium";
-    src: url('fonts/Jost-Medium.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "jost-light";
-    src: url('fonts/Jost-Light.ttf') format('truetype');
-}
-
-@font-face {
     font-family: "lora-regular";
     src: url('fonts/Lora-Regular.ttf') format('truetype');
 }
@@ -21,6 +6,26 @@
 @font-face {
     font-family: "lora-semibold";
     src: url('fonts/Lora-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "segoe-regular";
+    src: url('fonts/Segoe\ UI.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "segoe-italic";
+    src: url('fonts/Segoe\ UI.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "segoe-bold";
+    src: url('fonts/Segoe\ UI\ Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "segoe-bold-italic";
+    src: url('fonts/Segoe\ UI\ Bold\ Italic.ttf') format('truetype');
 }
 
 :root {
@@ -37,12 +42,13 @@
     --warm-30: #D45018;
     --warm-300: #FFDEDC;
 
-    --jost-regular: "jost-regular";
-    --jost-medium: "jost-medium";
-    --jost-light: "jost-light";
-
     --lora-regular: "lora-regular";
     --lora-semibold: "lora-semibold";
+
+    --segoe-regular: "segoe-regular";
+    --segoe-italic: "segoe-italic";
+    --segoe-bold: "segoe-bold";
+    --segoe-bold-italic: "segoe-bold-italic";
 }
 
 
@@ -50,7 +56,8 @@
 /* General CSS styles (for every page) */
 
 body {
-    font-family: var(--jost-regular);
+    font-family: var(--segoe-regular);
+    /* line-height: 150%; */
     margin: 0rem;
 }
 
@@ -106,8 +113,7 @@ header {
 }
 
 .nav-link:hover {
-    font-size: 1.3rem;
-    font-family: var(--jost-medium);
+    font-family: var(--segoe-bold);
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -177,6 +183,7 @@ h1, h2 {
 
 p {
     margin: .75rem 0;
+    line-height: 1.5;
 }
 
 img {
@@ -268,7 +275,7 @@ footer {
     background-color: white;
     color: var(--blue-40);
     cursor: pointer;
-    font-family: var(--jost-regular);
+    font-family: var(--segoe-regular);
     font-size: 1rem;
 }
 
@@ -326,7 +333,7 @@ pre > code {
 }
 
 #star-wrapper1 li {
-    font-family: var(--jost-medium);
+    font-family: var(--segoe-bold);
 }
 
 /* Project Bubbly */
@@ -368,7 +375,7 @@ input[type=text], #message {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: var(--jost-regular);
+    font-family: var(--segoe-regular);
 }
 
 #message {
@@ -520,7 +527,6 @@ input[type=text], #message {
         align-items: center;
         column-gap: 2rem;
         font-size: 1.15rem;
-        line-height: 1.5;
         margin: 0 3rem 2rem 3rem;
     }
     #personal-pic {
