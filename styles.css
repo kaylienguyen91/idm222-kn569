@@ -10,22 +10,22 @@
 
 @font-face {
     font-family: "segoe-regular";
-    src: url('fonts/Segoe\ UI.ttf') format('truetype');
+    src: url('fonts/Segoe-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "segoe-italic";
-    src: url('fonts/Segoe\ UI.ttf') format('truetype');
+    src: url('fonts/Segoe-Italic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "segoe-bold";
-    src: url('fonts/Segoe\ UI\ Bold.ttf') format('truetype');
+    src: url('fonts/Segoe-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "segoe-bold-italic";
-    src: url('fonts/Segoe\ UI\ Bold\ Italic.ttf') format('truetype');
+    src: url('fonts/Segoe-Bold-Italic.ttf') format('truetype');
 }
 
 :root {
