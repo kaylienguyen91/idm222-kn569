@@ -344,7 +344,7 @@ pre > code {
     border-radius: 1rem;
 }
 
-#star-purple-table {
+#star-purple-table, #star-poster {
     border: 2px solid #995CA5;
     border-radius: 1rem;
 }
@@ -494,7 +494,7 @@ input[type=text], #message {
         border: 5px solid var(--warm-10);
         border-radius: 2rem;
     }
-    #star-purple-table {
+    #star-purple-table, #star-poster {
         border: 5px solid #995CA5;
         border-radius: 2rem;
     }
