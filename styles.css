@@ -339,6 +339,16 @@ pre > code {
     font-family: var(--segoe-bold);
 }
 
+#star-yellow-table {
+    border: 2px solid var(--warm-10);
+    border-radius: 1rem;
+}
+
+#star-purple-table {
+    border: 2px solid #995CA5;
+    border-radius: 1rem;
+}
+
 /* Project Bubbly */
 
 #project-bubbly #cstudy-intro, #project-bubbly #cstudy-outro {
@@ -479,6 +489,14 @@ input[type=text], #message {
     }
     form {
         margin: 2rem 3rem;
+    }
+    #star-yellow-table {
+        border: 5px solid var(--warm-10);
+        border-radius: 2rem;
+    }
+    #star-purple-table {
+        border: 5px solid #995CA5;
+        border-radius: 2rem;
     }
 }
 
