@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="portfolio-assets/logo 32x32.png">
+        <title> Kaylie Nguyen - UI Designer &amp; UX Researcher </title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="nav-wrapper">
+                <a href="index.html"><img id="logo" src="portfolio-assets/logo-white-on-blue-round.png" alt="Logo"></a>
+                <ul class="nav-menu">
+                    <li>
+                        <a class="nav-link" href="index.html#projects"> Projects </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="portfolio-assets/kayliediepnguyen-resume.pdf" target="_blank"> Resume </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="about.html"> About </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contact.html"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+
+        <main class="main-content project-page" id="project-viet">
+            <div>
+                <h1 id="cstudy-name"> Vietnamese Cuisine Generator </h1>
+                <p id="cstudy-type"> Front-end Development | UI Design | Web-based Application </p>
+                <p id="cstudy-time"> January - March 2023 </p>
+                <div class="viet-link">
+                    <div class="button-div">
+                        <a class="view-button" href="https://github.com/kaylienguyen91/idm231-kn569" target="_blank"> GitHub </a>
+                    </div>
+                    <div class="button-div">
+                        <a class="view-button" href="https://kaylienguyen-idm231-kn569.netlify.app" target="_blank"> Final website </a>
+                    </div>
+                </div>
+                <p class="viet-note"> Note: The site only works on desktop screens. </p>
+                <p id="cstudy-intro"> Vietnamese Cuisine Generator is a creative version of the traditional zodiac 
+                    chart. This is a fun “game” where users can find out their featured personality traits and which 
+                    Vietnamese food represents them by entering their birthdays. <br> 
+                    This is also my first coding-heavy assignment in class. I have created a simple website with 
+                    HTML and CSS before, and this time I learned to implement JavaScript to design a dynamic and 
+                    interactive site with sounds and visual effects. Since this is an individual project, I took up 
+                    both design and development tasks.
+                </p>
+                <figure>
+                    <picture>
+                        <!-- <source media="(min-width: 500px)" srcset="portfolio-assets/case-study-bubbly/bubbly-logo_tablet.png"> -->
+                        <img id="viet-intro-img" src="portfolio-assets/case-study-viet-cuisine/pho.png" alt="Pho - The most popular Vietnamese dish in the world!">
+                    </picture>
+                    <figcaption> Pho - The most popular Vietnamese dish in the world! </figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h2 class="cstudy-sec-name"> 1. A simple but optimal design </h2>
+                <p> I got started with the project by building the content and designing the interface as they are 
+                    the backbones for the coding process.</p>
+                <p> The requirement of the assignment is to create an application based on Western Zodiac algorithm 
+                    - I was given some creative freedom to apply a theme to the app. I chose Vietnamese cuisine as 
+                    the theme - this is a part of my culture that I want to introduce to people. For the content, 
+                    I collected food illustrations with similar design to maintain the consistency throughout the 
+                    site, and also prioritized those with descriptive details to help users picture the dishes 
+                    better. I wrote a short introduction under each dish’s name to provide some information about 
+                    what kind of food it is, and what ingredients it has. This was a fun part of the project as I 
+                    got a chance to learn some interesting facts about the foods that are familiar to me. Next, I 
+                    assigned each dish a zodiac sign, either randomly or based on the “personality” that the dish 
+                    has. </p>
+                <figure>
+                    <div id="viet-wrapper1">
+                        <img src="portfolio-assets/case-study-viet-cuisine/demo-content-1.png" alt="Example of dish description for banh mi">
+                        <img src="portfolio-assets/case-study-viet-cuisine/demo-content-2.png" alt="Example of dish description for egg coffee">
+                    </div>
+                    <figcaption> How I organized the information in each food description box </figcaption>
+                </figure>
+                <div id="viet-wrapper2">
+                    <p> For the design process, I started with the color palette - my favorite part. Warm colors such 
+                        as red, orange, and yellow immediately came to my mind as they are very representative of 
+                        Vietnamese food. The green color was added to the palette at first since a feature of Vietnamese 
+                        cuisine is that the foods always have a decent amount of vegetables. However, I decided to 
+                        remove it because it’s a little tricky to incorporate this cool color with the warm ones, and 
+                        an analogous color scheme is basic enough to make the design look coherent but not overpower 
+                        the vivid colors of the illustrations. The layout of the site is clearly divided into 3 main 
+                        columns - two “sub-menu” columns on the sides for users to explore other Vietnamese foods that 
+                        don’t represent their signs, and a main column at the center with large-scale image and bold 
+                        text to emphasize the dish description. </p>
+                    <figure>
+                        <img id="viet-color" src="portfolio-assets/case-study-viet-cuisine/atomic-design.jpg" alt="Atomic design of the site">
+                        <figcaption> Atomic design of the site </figcaption>
+                    </figure>
+                </div>
+                <figure>
+                    <img id="viet-ui" src="portfolio-assets/case-study-viet-cuisine/ui-design.jpg" alt="Final interface of the site">
+                    <figcaption> Final interface of the site </figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h2 class="cstudy-sec-name"> 2. Trial and Error: A test of Perseverance </h2>
+                <p> JavaScript took the most time of the project, while the HTML and CSS part is pretty easy and 
+                    short as this is a one-page web-based application. I was completely new to JavaScript when 
+                    jumping into the assignment, thus I was struggling at first. I understood the lectures and 
+                    could get my homeworks well done but I had a hard time applying them to the actual project. 
+                    It took me some learning curves to figure things out, but looking back on the process and what 
+                    I learned, it was worth it. </p>
+                <p> The two main functions of the site are showing information of the corresponding sign (1) when 
+                    the users enter their birthdays (<code>function showDishDetail(dish)</code>), and (2) when they click on the food images on the sub-menu (<code>function showClickedDish(button)</code>). 
+                    It was a trial-and-error process. I first wrote my own code, tested it on the real site, found 
+                    bugs using Developer tools, modified my code, and ran it again - repeatedly until things worked 
+                    out. It might take me a whole evening just to run a function, which was frustrating at some 
+                    point, but I learned a lot along the way: how to organize variables and data properly, what is 
+                    the right syntax for a particular function, how to incorporate multiple functions, conditions 
+                    and loops in a logical way. </p>
+                <div>
+                    <pre>
+                        <code>
+const dishData = [
+    {
+        name: "Pho",
+        intro: "A soup dish consisting of broth, rice noodles, herbs, and sliced meat (usually beef)",
+        description: "You are friendly and outgoing, known as 'the diplomat' in your friend group.",
+        image: 'image-asset/pho.png',
+        sound: 'sounds/pho.wav',
+        id: "pho",
+    },
+    {
+        name: "Spring rolls",
+        intro: "A refreshing appetizer made with shrimp, vegetables, herbs, and rice noodles wrapped in rice paper",
+        description: "You have a great sense of humor and love making people laugh.",
+        image: 'image-asset/spring-rolls.png',
+        sound: 'sounds/spring-rolls.wav',
+        id: "spring-rolls",
+}];
+                        </code>
+                    </pre>
+                    <p class="code-caption"> I built a "database" to access the food's information more easily </p>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="cstudy-sec-name"> 3. Detour or Shortcut? </h2>
+                <p> But sometimes coding is not only about making things run but also making things run in the most 
+                    efficient way. For the function of showing dish detail based on the corresponding clicked button, 
+                    most of the other students in my class wrote a set of code for each single button, which was 12 
+                    similar sets repeated one after one. This was a detour but a safe way to get things done without 
+                    putting in too much brainwork. I was going to do the same thing but was challenged by the 
+                    question “Is there a faster way to do it?” I had the idea of using loops to avoid repetitive 
+                    lines of code but spent quite some time figuring out how to incorporate it. The <code>Array filter()</code> 
+                    method is what I ended up with: it loops through the data of foods’ information that I created 
+                    beforehand to find the one matching the clicked button. This wasn’t a genius idea or an eureka 
+                    moment but I was happy that I made an effort to shorten and optimize my code.</p>
+                <div>
+                    <pre>
+                        <code>
+function showClickedDish(button) {
+    const food = button.id;
+    const mainDish = dishData.filter(
+        item => item.id === food
+    )[0]
+    dishImage.src = mainDish.image;
+    dishName.innerText = mainDish.name;
+    dishIntro.innerText = mainDish.intro;
+    dishDescrip.innerText = mainDish.description;
+
+    playsound(mainDish.sound);
+}
+                        </code>
+                    </pre>
+                    <p class="code-caption"> I used <code>Array filter()</code> to avoid redundance.</p>
+                </div>
+
+                <div class="viet-link">
+                    <div class="button-div">
+                        <a class="view-button" href="https://github.com/kaylienguyen91/idm231-kn569" target="_blank"> GitHub </a>
+                    </div>
+                    <div class="button-div">
+                        <a class="view-button" href="https://kaylienguyen-idm231-kn569.netlify.app" target="_blank"> Final website </a>
+                    </div>
+                </div>
+                <p class="viet-note"> Note: The site only works on desktop screens. </p>
+
+            </div>
+
+            <p id="cstudy-outro"> This first hand experience with front-end development gave me a big picture of 
+                what it’s like to build an interactive website from scratch. The process wasn’t entirely easy but 
+                I’m proud of making the most out of this learning opportunity and creating a well-designed product. 
+                I also identified some of my weaknesses in development after the assignment and I’m currently looking 
+                for resources such as books and online courses to sharpen my skills.
+            </p>
+            <figure>
+                <img id="viet-outro-img" src="portfolio-assets/case-study-viet-cuisine/homepage-thumbnail.jpg" alt="A collection of 12 Vietnamese foods on the site">
+                <figcaption> How many of these have you tried? </figcaption>
+            </figure>
+
+        </main>
+
+        <footer>
+            <div id="footer-intro">
+                <p> Kaylie is a UI/UX designer and researcher based in Philadelphia, Pennsylvania. </p>
+                <a id="resume" href="portfolio-assets/kayliediepnguyen-resume.pdf" target="_blank"> View my resume </a>
+            </div>
+            <div id="contact">
+                <div id="contact-icons">
+                    <a id="linkedin" href="https://www.linkedin.com/in/kaylie-diep-nguyen" target="_blank"><img src="portfolio-assets/linkedin-whitecircle.png" alt="My LinkedIn profile"> </a> <br>
+                    <a id="email" href="mailto:kaylie.nguyen@drexel.edu"><img src="portfolio-assets/email-whitecircle.png" alt="My email address"></a> <br>
+                    <a id="github" href="https://github.com/kaylienguyen91" target="_blank"><img src="portfolio-assets/github.png" alt="My GitHub profile"></a>
+                </div>
+                <a href="mailto:kaylie.nguyen@drexel.edu"> kaylie.nguyen@drexel.edu </a> <br>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+
+    </body>
+
+</html>

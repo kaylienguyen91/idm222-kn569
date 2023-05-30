@@ -364,6 +364,7 @@ video {
 #project-ramen #cstudy-intro, #project-ramen #cstudy-outro {
     background-color: var(--warm-300);
 }
+
 #ramen-figmalink div, .viet-link div, #star-paper {
     margin: 1rem;
 }
@@ -561,7 +562,7 @@ input[type=text], #message {
     #star-logo, #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-gif, #unify-research, #unify-survey, #viet-intro-img, #viet-outro-img {
         width: 70%;
     }
-    #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-persona, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des, #unify-mapping, #unify-swot, #viet-ui {
+    #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-persona, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des-1, #ramen-final-des-2, #unify-mapping, #unify-swot, #viet-ui {
         width: 100%;
     }
     #form-flex {
@@ -576,7 +577,7 @@ input[type=text], #message {
     }
     
     .imgModal:hover {
-        opacity: 0.5;
+        opacity: 0.7;
         z-index: 1;
     }
     
@@ -698,7 +699,7 @@ input[type=text], #message {
         margin: 0;
         width: 100%;
     }
-    #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2, #viet-wrapper1 {
+    #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #viet-wrapper1 {
         display: flex;
         align-items: center;
         column-gap: 2rem;
@@ -724,7 +725,7 @@ input[type=text], #message {
         display: flex;
         flex-wrap: wrap;
     }
-    #star-wrapper1 > *, #ramen-wrapper1 > *, #bubbly-wrapper3 img, #viet-wrapper1 img {
+    #star-wrapper1 > *, #ramen-wrapper1 > *, #ramen-wrapper3 > *, #ramen-wrapper4 > *, #bubbly-wrapper3 img, #viet-wrapper1 img {
         width: 50%;
     }
 }
