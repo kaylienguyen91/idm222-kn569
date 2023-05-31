@@ -171,7 +171,7 @@ figcaption, .code-caption {
     margin-top: 2rem;
 }
 
-.project-page img {
+.project-page img, #ramen-wrapper5 {
     margin-top: 1rem;
 }
 
@@ -216,6 +216,10 @@ footer {
     display: flex;
     justify-content: center;
     gap: .5rem;
+}
+
+.text-bold-italic {
+    font-family: var(--segoe-bold-italic);
 }
 
 /* Homepage CSS styles (for index.html) */
@@ -699,7 +703,7 @@ input[type=text], #message {
         margin: 0;
         width: 100%;
     }
-    #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #viet-wrapper1 {
+    #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #viet-wrapper1 {
         display: flex;
         align-items: center;
         column-gap: 2rem;
@@ -725,7 +729,7 @@ input[type=text], #message {
         display: flex;
         flex-wrap: wrap;
     }
-    #star-wrapper1 > *, #ramen-wrapper1 > *, #ramen-wrapper3 > *, #ramen-wrapper4 > *, #bubbly-wrapper3 img, #viet-wrapper1 img {
+    #star-wrapper1 > *, #ramen-wrapper1 > *, #ramen-wrapper3 > *, #ramen-wrapper4 > *, #ramen-wrapper5 > *, #bubbly-wrapper3 img, #viet-wrapper1 img {
         width: 50%;
     }
 }
