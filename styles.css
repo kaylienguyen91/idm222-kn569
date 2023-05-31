@@ -703,7 +703,7 @@ input[type=text], #message {
         margin: 0;
         width: 100%;
     }
-    #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #viet-wrapper1 {
+    #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #ramen-wrapper6, #viet-wrapper1 {
         display: flex;
         align-items: center;
         column-gap: 2rem;
@@ -729,8 +729,11 @@ input[type=text], #message {
         display: flex;
         flex-wrap: wrap;
     }
-    #star-wrapper1 > *, #ramen-wrapper1 > *, #ramen-wrapper3 > *, #ramen-wrapper4 > *, #ramen-wrapper5 > *, #bubbly-wrapper3 img, #viet-wrapper1 img {
+    #star-wrapper1 > *, #ramen-wrapper1 > *, #ramen-wrapper3 > *, #ramen-wrapper4 > *, #ramen-wrapper5 > *, #ramen-wrapper6 > *, #bubbly-wrapper3 img, #viet-wrapper1 img {
         width: 50%;
+    }
+    #ramen-wrapper6 {
+        justify-items: center;
     }
 }
 
