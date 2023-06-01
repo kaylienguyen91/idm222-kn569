@@ -193,6 +193,15 @@ img {
     margin: .75rem 0 0 0;
 }
 
+strong {
+    font-family: var(--segoe-bold);
+}
+
+.key-point {
+    font-family: var(--segoe-bold-italic);
+    font-size: 1.25rem;
+}
+
 footer, footer a {
     background-color: var(--blue-40);
     color: white;
@@ -216,10 +225,6 @@ footer {
     display: flex;
     justify-content: center;
     gap: .5rem;
-}
-
-.text-bold-italic {
-    font-family: var(--segoe-bold-italic);
 }
 
 /* Homepage CSS styles (for index.html) */
