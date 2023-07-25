@@ -152,7 +152,7 @@ a {
     color: var(--blue-40);
 }
 
-.nav-menu, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, .code-caption, #subtitle, #bubbly-vid, h2 {
+.nav-menu, #page-title, .project-tags, .button-div, .project-name, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, .code-caption, #subtitle, #bubbly-vid, h2, h3 {
     text-align: center;
 }
 
@@ -259,6 +259,7 @@ footer {
 }
 
 #home-cstudy-grid > div {
+    cursor: pointer;
     margin-top: 2rem;
     border-radius: 1rem;
     box-shadow: 0 .3rem .5rem 0 rgba(0, 0, 0, 0.2);
@@ -306,6 +307,8 @@ footer {
 #cstudy-type, #cstudy-time {
     margin: .5rem auto;
 }
+
+
 
 
 /* About page */
@@ -400,12 +403,26 @@ video {
     background-color: var(--warm-300);
 }
 
-#ramen-figmalink div, .viet-link div, #star-paper {
+.viet-link div, #star-paper {
     margin: 1rem;
 }
 
 #ramen-problem {
     max-width: 400px;
+}
+
+#ramen-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+#ramen-wrapper1 > * {
+    margin: 2rem auto 0 auto;
+}
+
+#ramen-figmalink > div {
+    margin-bottom: 1rem;
 }
 
 /* Project Unify */
@@ -488,7 +505,8 @@ input[type=text], #message {
     }
     #ramen-figmalink {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        column-gap: 2rem;
     }
     .viet-link {
         display: flex;
@@ -599,7 +617,7 @@ input[type=text], #message {
     .project-page img {
         width: 80%;
     }
-    #star-logo, #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-gif, #unify-research, #unify-survey, #viet-intro-img, #viet-outro-img {
+    #star-logo, #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-newmap, #ramen-gif, #unify-research, #unify-survey, #viet-intro-img, #viet-outro-img {
         width: 70%;
     }
     #star-poster, #bubbly-appflow1, #bubbly-appflow2, #bubbly-persona, #bubbly-inter-guide, #ramen-wireframe, #ramen-final-des-1, #ramen-final-des-2, #ramen-progress, #unify-mapping, #unify-swot, #viet-ui {
@@ -617,7 +635,7 @@ input[type=text], #message {
     }
     
     .imgModal:hover {
-        opacity: 0.7;
+        box-shadow: .3rem .3rem .5rem 0 rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
     
@@ -750,7 +768,7 @@ input[type=text], #message {
         margin: 0;
         width: 100%;
     }
-    #star-wrapper1, #ramen-wrapper1, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #viet-wrapper1 {
+    #star-wrapper1, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #viet-wrapper1 {
         display: flex;
         align-items: center;
         column-gap: 2rem;
@@ -776,7 +794,7 @@ input[type=text], #message {
         display: flex;
         flex-wrap: wrap;
     }
-    #star-wrapper1 > *, #ramen-wrapper1 > *, #ramen-wrapper3 > *, #ramen-wrapper4 > *, #ramen-wrapper5 > *, #bubbly-wrapper3 img, #viet-wrapper1 img {
+    #star-wrapper1 > *, #ramen-wrapper3 > *, #ramen-wrapper4 > *, #ramen-wrapper5 > *, #bubbly-wrapper3 img, #viet-wrapper1 img {
         width: 50%;
     }
     #ramen-wrapper6 {
@@ -787,6 +805,10 @@ input[type=text], #message {
         display: flex;
         flex-direction: row;
         width: 50%;
+    }
+    #ramen-wrapper1 {
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
