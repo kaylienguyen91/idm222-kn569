@@ -344,7 +344,6 @@ iframe {
 
 .callout {
     width: 100vw;
-    position: relative; 
     margin-left: calc((-100vw + 100%) / 2);
     margin-right: calc((-100vw + 100%) / 2);
     padding: 1rem 0;
@@ -387,10 +386,6 @@ pre > code {
 
 #star-quotes {
     border-radius: 40px;
-}
-
-#star-wrapper1 li {
-    font-family: var(--segoe-bold);
 }
 
 #star-yellow-table {
@@ -789,12 +784,12 @@ input[type=text], #message {
         margin: 0;
         width: 100%;
     }
-    #star-wrapper1, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #viet-wrapper1 {
+    #star-wrapper1, #star-wrapper2, #star-wrapper3, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #viet-wrapper1 {
         display: flex;
         align-items: center;
         column-gap: 2rem;
     }
-    #star-wrapper1 {
+    #star-wrapper1, #star-wrapper2 {
         flex-direction: row-reverse;
     }
     #bubbly-wrapper1, #bubbly-wrapper2, #unify-wrapper1, #unify-wrapper2, #unify-wrapper3 {
@@ -817,6 +812,12 @@ input[type=text], #message {
     }
     #star-wrapper1 > *, #ramen-wrapper3 > *, #ramen-wrapper4 > *, #ramen-wrapper5 > *, #bubbly-wrapper3 img, #viet-wrapper1 img {
         width: 50%;
+    }
+    #star-wrapper2, #star-wrapper3 {
+        column-gap: 4rem;
+    }
+    #star-wrapper2 img, #star-wrapper3 img {
+        width: 35%;
     }
     #ramen-wrapper6 {
         display: grid;
