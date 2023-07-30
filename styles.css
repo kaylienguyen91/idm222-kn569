@@ -178,11 +178,14 @@ h1, h2 {
 
 p {
     margin: .75rem 0;
-    line-height: 1.5;
 }
 
 li {
     margin: .5rem 0;
+}
+
+p, li {
+    line-height: 160%;
 }
 
 img {
@@ -784,7 +787,7 @@ input[type=text], #message {
         margin: 0;
         width: 100%;
     }
-    #star-wrapper1, #star-wrapper2, #star-wrapper3, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #viet-wrapper1 {
+    #star-wrapper1, #star-wrapper2, #star-wrapper3, #star-wrapper4, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #viet-wrapper1 {
         display: flex;
         align-items: center;
         column-gap: 2rem;
@@ -818,6 +821,9 @@ input[type=text], #message {
     }
     #star-wrapper2 img, #star-wrapper3 img {
         width: 35%;
+    }
+    #star-wrapper4 img {
+        width: 40%;
     }
     #ramen-wrapper6 {
         display: grid;
