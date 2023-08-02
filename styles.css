@@ -787,7 +787,7 @@ input[type=text], #message {
         margin: 0;
         width: 100%;
     }
-    #star-wrapper1, #star-wrapper2, #star-wrapper3, #star-wrapper4, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #viet-wrapper1 {
+    #star-wrapper1, #star-wrapper2, #star-wrapper3, #star-wrapper4, #ramen-wrapper2, #ramen-wrapper3, #ramen-wrapper4, #ramen-wrapper5, #ramen-wrapper8, #viet-wrapper1 {
         display: flex;
         align-items: center;
         column-gap: 2rem;
@@ -806,7 +806,7 @@ input[type=text], #message {
     #unify-survey {
         width: 80%;
     }
-    #star-quotes, #star-charts img, #bubbly-cardsort, #bubbly-rebrand, #ramen-persona, #ramen-wrapper2 img, #ramen-wrapper6 img {
+    #star-quotes, #star-charts img, #bubbly-cardsort, #bubbly-rebrand, #ramen-persona, #ramen-wrapper2 img, #ramen-wrapper6 img, #ramen-wrapper8 img {
         width: 100%;
     }
     #bubbly-wrapper3 {
