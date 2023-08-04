@@ -167,6 +167,10 @@ figcaption, .code-caption {
     padding: 1rem;
 }
 
+#cstudy-outro {
+    margin-top: 5rem;
+}
+
 .project-page img, #ramen-wrapper5 {
     margin-top: 1rem;
 }
@@ -198,7 +202,6 @@ strong {
 
 .key-point {
     font-family: var(--segoe-bold-italic);
-    font-size: 1.25rem;
 }
 
 footer, footer a {
@@ -352,6 +355,18 @@ iframe {
     padding: 1rem 0;
     margin-top: 1rem;
     line-height: 150%;
+}
+
+.callout p, .callout ol {
+    max-width: fit-content;
+}
+
+.callout p {
+    text-align: center;
+}
+
+.distinct-callout {
+    margin-top: 4rem;
 }
 
 
