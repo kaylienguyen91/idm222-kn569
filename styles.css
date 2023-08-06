@@ -573,7 +573,7 @@ input[type=text], #message {
     #personal-pic, #star-logo {
         width: 50%;
     }
-    #star-quotes, #viet-intro-img, #viet-outro-img {
+    #star-quotes, #viet-intro-img, #viet-outro-img, #bubbly-logo {
         width: 80%;
     }
     form {
@@ -658,6 +658,9 @@ input[type=text], #message {
     }
     #star-poster, #bubbly-persona, #ramen-wireframe, #ramen-final-des-1, #ramen-final-des-2, #ramen-progress, #unify-mapping, #unify-swot, #viet-ui {
         width: 100%;
+    }
+    #bubbly-logo {
+        width: 50%;
     }
     #form-flex {
         display: flex;
