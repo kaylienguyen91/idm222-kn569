@@ -395,6 +395,10 @@ p.callout-leftalign {
     margin-top: 4rem;
 }
 
+li.arrow-mark {
+    list-style-type: none;
+}
+
 div.impact {
     margin: 3.5rem auto;
     max-width: 30rem;
@@ -844,7 +848,7 @@ input[type=text], #message {
         margin-top: 3rem;
     }
     #home-cstudy-grid > div > div {
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;
     }
     h1 {
         font-size: 2.5rem;
@@ -981,9 +985,6 @@ input[type=text], #message {
         margin: 4rem auto auto auto;
         max-width: 50rem;
     }
-    li.arrow-mark {
-        list-style-type: none;
-    }
     div.se-solution video {
         width: 220px;
     }
@@ -1036,6 +1037,6 @@ input[type=text], #message {
         column-gap: 3rem;
     }
     #home-cstudy-grid > div > div {
-        padding: 1rem 3rem;
+        padding: 1rem 4rem;
     }
 }
