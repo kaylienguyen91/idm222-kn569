@@ -1,21 +1,11 @@
 @font-face {
-    font-family: "lora-regular";
-    src: url('fonts/Lora-Regular.ttf') format('truetype');
-}
-
-@font-face {
     font-family: "lora-semibold";
-    src: url('fonts/Nunito-Bold.ttf') format('truetype');
+    src: url('fonts/Lato-Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "segoe-regular";
+    font-family: "nunito-regular";
     src: url('fonts/Nunito-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "segoe-italic";
-    src: url('fonts/Segoe-Italic.ttf') format('truetype');
 }
 
 @font-face {
@@ -42,11 +32,9 @@
     --warm-30: #D45018;
     --warm-300: #FFDEDC;
 
-    --lora-regular: "lora-regular";
     --lora-semibold: "lora-semibold";
 
-    --segoe-regular: "segoe-regular";
-    --segoe-italic: "segoe-italic";
+    --nunito-regular: "nunito-regular";
     --segoe-bold: "segoe-bold";
     --segoe-bold-italic: "segoe-bold-italic";
 }
@@ -54,7 +42,7 @@
 /* General CSS styles (for every page) */
 
 body {
-    font-family: var(--segoe-regular);
+    font-family: var(--nunito-regular);
     /* line-height: 150%; */
     margin: 0rem;
 }
@@ -324,7 +312,7 @@ footer {
     background-color: white;
     color: var(--blue-40);
     cursor: pointer;
-    font-family: var(--segoe-regular);
+    font-family: var(--nunito-regular);
     font-size: 1rem;
 }
 
@@ -562,7 +550,7 @@ input[type=text], #message {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: var(--segoe-regular);
+    font-family: var(--nunito-regular);
 }
 
 #message {
