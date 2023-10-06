@@ -429,6 +429,12 @@ span.cross-text {
     background-color: #EEEEEE;
 }
 
+#project-se span.sub-heading {
+    color: #399212;
+    font-size: 75%;
+    padding-bottom: 1rem;
+}
+
 
 /* Project Viet */
 
