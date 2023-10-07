@@ -140,8 +140,12 @@ a {
     color: var(--blue-40);
 }
 
-.nav-menu, #page-title, .button-div, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, .code-caption, #subtitle, #bubbly-vid, h3 {
+.nav-menu, #page-title, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, .code-caption, #subtitle, #bubbly-vid, h3 {
     text-align: center;
+}
+
+.button-div {
+    margin-top: 2rem;
 }
 
 #project-se h3 {
@@ -157,6 +161,8 @@ figcaption, .code-caption {
 #cstudy-intro, #cstudy-outro, form {
     border-radius: 2rem;
     padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cstudy-outro {
@@ -165,6 +171,10 @@ figcaption, .code-caption {
 
 .project-page img, #ramen-wrapper5 {
     margin-top: 1rem;
+}
+
+img.hero-img {
+    margin-top: -1rem;
 }
 
 h1, h2 {
@@ -344,12 +354,12 @@ footer {
 
 .project-page h2 {
     text-align: left;
-    margin-top: 4rem;
+    margin: 4rem 0 2rem 0;
 }
 
 .project-page p, ul, ol {
-    max-width: 40rem;
-    margin: 1.5rem auto;
+    max-width: 50rem;
+    margin-top: 1.5rem;
 }
 
 iframe {
@@ -367,15 +377,13 @@ iframe {
     line-height: 150%;
 }
 
-.callout p, .callout ol {
-    max-width: fit-content;
-}
-
-.callout p {
+.callout p, .callout ol, .callout ul {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p.callout-leftalign {
+p.callout-leftalign, ol.callout-leftalign, ul.callout-leftalign {
     text-align: left;
 }
 
@@ -415,10 +423,6 @@ span.cross-text {
 
 #project-se #cstudy-intro, #se #cstudy-outro, .se-callout {
     background-color: #E3FBD8;
-}
-
-.se-callout p {
-    max-width: 45rem;
 }
 
 .se-callout h2 {
@@ -498,8 +502,9 @@ video {
     margin: 1rem;
 }
 
-img.width-40rem-img {
-    max-width: 40rem;
+p.center-align {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img.ramen-quotes {
@@ -579,7 +584,7 @@ input[type=text], #message {
         padding: 1rem 1.3rem;
     }
     #homepage-headshot {
-        width: 50%;
+        width: 40%;
     }
     #home-cstudy-grid > div {
         margin-top: 2.5rem;
@@ -838,7 +843,7 @@ input[type=text], #message {
     #projects {
         margin: 2rem 5rem 0 5rem;
     }
-    #home-cstudy-grid > div, .cstudy-sec-name, p.margin-top-3rem {
+    #home-cstudy-grid > div, p.margin-top-3rem {
         margin-top: 3rem;
     }
     #home-cstudy-grid > div > div {
@@ -866,8 +871,11 @@ input[type=text], #message {
     .project-page img {
         margin-top: 2rem;
     }
+    img.hero-img {
+        margin-top: -2rem;
+    }
     .project-page h2 {
-        margin-top: 6rem;
+        margin: 6rem 0 3rem 0;
     }
     .callout h2, div.margin-top-4rem, p.margin-top-4rem, h3.margin-top-4rem {
         margin-top: 4rem;
@@ -924,7 +932,11 @@ input[type=text], #message {
     #star-wrapper2, #star-wrapper3 {
         column-gap: 4rem;
     }
-    #homepage-headshot, #star-wrapper2 img, #star-wrapper3 img {
+    #homepage-headshot {
+        width: 30%;
+        margin: 1rem 0 1rem auto;
+    }
+    #star-wrapper2 img, #star-wrapper3 img {
         width: 35%;
     }
     #star-wrapper4 img, div.se-problem > img, div.se-problem > video {
@@ -974,10 +986,10 @@ input[type=text], #message {
     }
     div.se-solution {
         display: flex;
-        column-gap: 5rem;
+        column-gap: 7rem;
         align-items: center;
+        justify-content: space-between;
         margin: 4rem auto auto auto;
-        max-width: 50rem;
     }
     div.se-solution video {
         width: 220px;
@@ -989,6 +1001,14 @@ input[type=text], #message {
         display: flex;
         width: 80%;
         margin: auto;
+    }
+    div.grid-2column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+    }
+    div.impact {
+        margin: 2rem auto;
     }
 }
 
