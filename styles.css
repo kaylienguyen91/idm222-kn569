@@ -415,6 +415,10 @@ span.cross-text {
     text-decoration: line-through;
 }
 
+span.sub-heading {
+    font-size: 75%;
+}
+
 /* Project SE app */
 
 #project-se h1 {
@@ -425,18 +429,12 @@ span.cross-text {
     background-color: #E3FBD8;
 }
 
-.se-callout h2 {
+.se-callout h2, #project-se span.sub-heading {
     color: #4EA528;
 }
 
 .se-callout-grey {
     background-color: #EEEEEE;
-}
-
-#project-se span.sub-heading {
-    color: #399212;
-    font-size: 75%;
-    padding-bottom: 1rem;
 }
 
 
@@ -493,6 +491,10 @@ video {
 }
 
 /* Project Ramen Bar */
+
+#project-ramen span.sub-heading {
+    color: #F37A23;
+}
 
 #project-ramen #cstudy-intro, #project-ramen #cstudy-outro {
     background-color: var(--warm-100);
