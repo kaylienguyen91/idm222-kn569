@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "lora-semibold";
+    font-family: "lato-bold";
     src: url('fonts/Lato-Bold.ttf') format('truetype');
 }
 
@@ -9,13 +9,18 @@
 }
 
 @font-face {
-    font-family: "segoe-bold";
+    font-family: "nunito-bold";
+    src: url('fonts/nunito/Nunito-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "nunito-extra-bold";
     src: url('fonts/Nunito-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "segoe-bold-italic";
-    src: url('fonts/Segoe-Bold-Italic.ttf') format('truetype');
+    font-family: "nunito-bold-italic";
+    src: url('fonts//nunito/Nunito-BoldItalic.ttf') format('truetype');
 }
 
 :root {
@@ -32,11 +37,12 @@
     --warm-30: #D45018;
     --warm-300: #FFDEDC;
 
-    --lora-semibold: "lora-semibold";
+    --lato-bold: "lato-bold";
 
     --nunito-regular: "nunito-regular";
-    --segoe-bold: "segoe-bold";
-    --segoe-bold-italic: "segoe-bold-italic";
+    --nunito-bold: "nunito-bold";
+    --nunito-extra-bold: "nunito-extra-bold";
+    --nunito-bold-italic: "nunito-bold-italic";
 }
 
 /* General CSS styles (for every page) */
@@ -100,7 +106,7 @@ header {
 }
 
 .nav-link:hover {
-    font-family: var(--segoe-bold);
+    font-family: var(--nunito-extra-bold);
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -127,6 +133,10 @@ main {
     margin: 100px 1.5rem 0 1.5rem;
 }
 
+div.callout-text {
+    margin: auto 1.5rem;
+}
+
 figure, img {
     width: 100%;
 }
@@ -140,7 +150,7 @@ a {
     color: var(--blue-40);
 }
 
-.nav-menu, #page-title, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, .code-caption, #subtitle, #bubbly-vid, h3 {
+h2.project-name, .button-div, .nav-menu, #page-title, #cstudy-name, #cstudy-type, #cstudy-time, figcaption, .code-caption, #subtitle, #bubbly-vid, h3 {
     text-align: center;
 }
 
@@ -178,8 +188,13 @@ img.hero-img {
 }
 
 h1, h2 {
-    font-family: var(--lora-semibold);
+    font-family: var(--lato-bold);
     margin: 1rem 0 0 0;
+}
+
+h3 {
+    font-family: var(--nunito-bold);
+    font-size: 1.3rem;
 }
 
 p {
@@ -199,11 +214,11 @@ img {
 }
 
 strong {
-    font-family: var(--segoe-bold);
+    font-family: var(--nunito-extra-bold);
 }
 
 .key-point {
-    font-family: var(--segoe-bold-italic);
+    font-family: var(--nunito-bold-italic);
 }
 
 footer, footer a {
@@ -362,6 +377,10 @@ footer {
     margin-top: 1.5rem;
 }
 
+figcaption {
+    max-width: 50rem;
+}
+
 iframe {
     width: 100%;
     max-width: 450px;
@@ -377,7 +396,11 @@ iframe {
     line-height: 150%;
 }
 
-.callout p, .callout ol, .callout ul {
+.callout h2 {
+    margin-top: 2rem;
+}
+
+.callout p, .callout ol, .callout ul, figcaption {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -419,9 +442,31 @@ span.sub-heading {
     font-size: 75%;
 }
 
+div.photo-strip-4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.photo-strip-4 img {
+    width: 50%;
+}
+
+.column-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column-3-img img {
+    width: 50%;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
 /* Project SE app */
 
-#project-se h1 {
+#project-se h1, #project-ramen h1 {
     margin-top: 4rem;
 }
 
@@ -435,6 +480,12 @@ span.sub-heading {
 
 .se-callout-grey {
     background-color: #EEEEEE;
+}
+
+#se-icon {
+    display: block;
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -529,7 +580,6 @@ img.ramen-quotes {
 
 div.callout-text {
     max-width: 60rem;
-    margin: auto;
 }
 
 .ramen-callout {
@@ -611,18 +661,17 @@ input[type=text], #message {
         font-size: 1.7rem;
     }
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .main-content {
-        margin: 80px 3.5rem 0 3.5rem;
+        margin: 80px 5rem 0 5rem;
+    }
+    div.callout-text {
+        margin: auto 5rem;
     }
     #cstudy-intro, #cstudy-outro, form {
         border-radius: 2rem;
         padding: 1.3rem;
-    }
-    img {
-        display: block;
-        margin: auto;
     }
     #ramen-figmalink {
         display: flex;
@@ -734,6 +783,9 @@ input[type=text], #message {
     #personal-pic {
         width: 30%;
     }
+    h2.project-name, .button-div {
+        text-align: left;
+    }
 
     /* All pages */
     .project-page img {
@@ -742,10 +794,10 @@ input[type=text], #message {
     img.callout {
         width: 100vw;
     }
-    #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-newmap, #ramen-gif, #unify-research, #unify-survey, #viet-intro-img, #viet-outro-img {
+    #se-icon, #star-charts img, #star-quotes, #bubbly-wrapper3 img, #ramen-newmap, #ramen-gif, #unify-research, #unify-survey, #viet-intro-img, #viet-outro-img {
         width: 70%;
     }
-    #star-poster, #bubbly-persona, img.ramen-quotes, #ramen-journeymap, #ramen-howmightwe, #ramen-wireframe, #ramen-final-des-1, #ramen-final-des-2, #ramen-progress, #unify-mapping, #unify-swot, #viet-ui {
+    img.width100, #star-poster, #bubbly-persona, img.ramen-quotes, #ramen-journeymap, #ramen-howmightwe, #ramen-wireframe, #ramen-final-des-1, #ramen-final-des-2, #ramen-progress, #unify-mapping, #unify-swot, #viet-ui {
         width: 100%;
     }
     #bubbly-logo {
@@ -758,6 +810,42 @@ input[type=text], #message {
     }
     .callout {
         font-size: 120%;
+    }
+    div.photo-strip-4 img {
+        width: 25%;
+    }
+    div.se-problem {
+        display: flex;
+        column-gap: 3rem;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    div.se-problem > img, div.se-problem > video {
+        width: 40%;
+    }
+    div.se-solution {
+        display: flex;
+        column-gap: 4rem;
+        align-items: center;
+        justify-content: space-between;
+        margin: 4rem auto auto auto;
+    }
+    div.se-solution video {
+        width: 220px;
+    }
+    div.se-2img {
+        display: flex;
+        margin: auto;
+    }
+    div.se-2img img {
+        margin-top: .75rem;
+    }
+    .column-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .column-3-img img {
+        width: 100%;
     }
 
     /* Modal image */
@@ -845,7 +933,10 @@ input[type=text], #message {
     #projects {
         margin: 2rem 5rem 0 5rem;
     }
-    #home-cstudy-grid > div, p.margin-top-3rem {
+    .project-page h2 {
+        margin: 6rem 0 3rem 0;
+    }
+    #home-cstudy-grid > div, p.margin-top-3rem, .callout h2  {
         margin-top: 3rem;
     }
     #home-cstudy-grid > div > div {
@@ -876,11 +967,11 @@ input[type=text], #message {
     img.hero-img {
         margin-top: -2rem;
     }
-    .project-page h2 {
-        margin: 6rem 0 3rem 0;
-    }
-    .callout h2, div.margin-top-4rem, p.margin-top-4rem, h3.margin-top-4rem {
+    div.margin-top-4rem, p.margin-top-4rem, h3.margin-top-4rem {
         margin-top: 4rem;
+    }
+    div.callout-text {
+        margin: auto;
     }
     #se-icon, #ramen-gif, #viet-intro-img, #viet-color {
         width: 60%;
@@ -910,7 +1001,7 @@ input[type=text], #message {
     #star-wrapper1, #star-wrapper2 {
         flex-direction: row-reverse;
     }
-    .bubbly-wrapper, #unify-wrapper1, #unify-wrapper2, #unify-wrapper3, .column-3 {
+    .bubbly-wrapper, #unify-wrapper1, #unify-wrapper2, #unify-wrapper3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2rem;
@@ -918,10 +1009,10 @@ input[type=text], #message {
     .bubbly-wrapper figure, #unify-wrapper1 figure, #unify-wrapper2 figure, #unify-wrapper3 figure {
         grid-column: 2/4;
     }
-    #unify-survey {
+    #unify-survey, div.se-2img {
         width: 80%;
     }
-    img.width100, div.column-5050 img, .column-3-img img, #star-quotes, #star-charts img, #bubbly-cardsort, #bubbly-rebrand, #ramen-persona, #ramen-wrapper2 img {
+    div.column-5050 img, #star-quotes, #star-charts img, #bubbly-cardsort, #bubbly-rebrand, #ramen-persona, #ramen-wrapper2 img {
         width: 100%;
     }
     #bubbly-wrapper3 {
@@ -941,7 +1032,7 @@ input[type=text], #message {
     #star-wrapper2 img, #star-wrapper3 img {
         width: 35%;
     }
-    #star-wrapper4 img, div.se-problem > img, div.se-problem > video {
+    #star-wrapper4 img {
         width: 40%;
     }
     #ramen-sketch, div.column-5050 {
@@ -950,7 +1041,7 @@ input[type=text], #message {
         align-items: flex-start;
         align-content: flex-start;
     }
-    .ramen-sketch-text h4, div.se-2img img {
+    .ramen-sketch-text h4 {
         margin-top: .75rem;
     }
     .ramen-h3 {
@@ -974,35 +1065,11 @@ input[type=text], #message {
         width: 70%;
         margin: 2rem auto auto auto;
     }
-    div.photo-strip-4 {
-        display: flex;
-    }
-    div.photo-strip-4 img {
-        width: 25%;
-    }
-    div.se-problem {
-        display: flex;
-        column-gap: 3rem;
-        align-items: center;
-        margin-top: 4rem;
-    }
     div.se-solution {
-        display: flex;
         column-gap: 7rem;
-        align-items: center;
-        justify-content: space-between;
-        margin: 4rem auto auto auto;
-    }
-    div.se-solution video {
-        width: 220px;
     }
     #se-cropped-vid {
         width: 250px;
-    }
-    div.se-2img {
-        display: flex;
-        width: 80%;
-        margin: auto;
     }
     div.grid-2column {
         display: grid;
