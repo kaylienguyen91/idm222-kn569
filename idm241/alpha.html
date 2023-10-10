@@ -1,1 +1,93 @@
-<h1> Hello </h1>
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="portfolio-assets/logo 32x32.png">
+        <title> IDM 241 - Alpha </title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1> IDM 241 - Alpha </h1>
+            <p><em>Kaylie Nguyen</em> </p>
+            <div class="button">
+                <a href="https://www.figma.com/blog/">View the original interface</a>
+            </div>
+            <p> Microinteraction: Search button</p>
+        </header>
+
+        <main>
+            <div id="content">
+                <div id="trigger">
+                    <h2> Triggers </h2>
+                    <ol>
+                        <li> Hover on/off the Search button</li>
+                        <li> Click on the Search button </li>
+                    </ol>
+                </div>
+                <div id="rules">
+                    <h2> Rules</h2>
+                    <ol>
+                        <li> When hover on: cursor turns into pointer</li>
+                        <li> When hover off: pointer turns back into cursor</li>
+                        <li> When click on:
+                            <ul>
+                                <li> The whole header turns black (including Search button), except for "Shortcut" logo.</li>
+                                <li> A search bar with blinking cursor shows up below the logo and makes the nav bar bigger (no animation/transition).</li>
+                                <li> The search bar slightly jumps/moves (could be a bug/technical issue).</li>
+                                <li> A "close" button and an "Enter" button show up on the right side (no animation/transition).</li>
+                                <li> The color of rest of the screen is desaturated.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div id="feedback">
+                    <h2> Feedback</h2>
+                    <ol>
+                        <li> When hover on: cursor turns into pointer</li>
+                        <li> When hover off: pointer turns back into cursor</li>
+                        <li> When click on:
+                            <ul>
+                                <li> The whole header turns black (including Search button), except for "Shortcut" logo.</li>
+                                <li> A search bar with blinking cursor shows up below the logo and makes the nav bar bigger (no animation/transition).</li>
+                                <li> The search bar slightly jumps/moves (could be a bug/technical issue).</li>
+                                <li> A "Close" button and an "Enter" button show up on the right side (no animation/transition).</li>
+                                <li> The color of rest of the screen is desaturated.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div id="loop-mode">
+                    <h2> Loops & Modes </h2>
+                    <ol>
+                        <li> No loops </li>
+                        <li> Modes: New elements show up
+                            <ul>
+                                <li> A search bar with blinking cursor</li>
+                                <li> A "Close" button </li>
+                                <li> An "Enter" button</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div id="screenshot">
+                <figure>
+                    <img src="media/before-click.png" alt="Before click on the Search button">
+                    <figcaption> Before click on the Search button</figcaption>
+                </figure>
+                <figure>
+                    <img src="media/clicking.png" alt="After click on the Search button">
+                    <figcaption> After click on the Search button</figcaption>
+                </figure>
+            </div>
+        </main>
+    </body>
+
+</html>

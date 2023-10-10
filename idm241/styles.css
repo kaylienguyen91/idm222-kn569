@@ -1,0 +1,47 @@
+html {
+    /* background-color: #fef8ed; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, figcaption {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2 {
+    color: #EE8F39;
+}
+
+a {
+    text-decoration: none;
+    /* color: #EE8F39; */
+    display: inline-block;
+    border: 3px solid #EE8F39;
+    border-radius: 4rem;
+    padding: 0.5rem 1.5rem;
+    transition: color .3s ease-out 0s,
+    background-color .3s ease-in 0s;
+}
+
+a:hover {
+    background-color: #EE8F39;
+    color: white;
+}
+
+div.button {
+    
+}
+
+#content > div {
+    border: 3px solid #FFBF47;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    #content {
+        display: flex;
+    }
+}
