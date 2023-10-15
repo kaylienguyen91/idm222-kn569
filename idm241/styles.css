@@ -47,8 +47,31 @@ a:hover {
     max-width: 40rem;
 }
 
-figure {
+figure, #microinter {
     margin: 3rem auto;
+}
+
+
+/* Alpha build: Functional microinteraction */
+
+#microinter {
+    background-color: black;
+    width: 10%;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+#search-icon:hover {
+    cursor: pointer;
+    animation-name: jumping;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes jumping{
+    0%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-1.5rem);}
 }
 
 @media screen and (min-width: 700px) {
@@ -70,6 +93,9 @@ figure {
     #screenshot {
         display: flex;
         margin: auto;
+    }
+    #microinter {
+        padding: 3rem;
     }
 }
 

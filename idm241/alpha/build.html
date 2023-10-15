@@ -5,23 +5,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../styles.css">
         <link rel="icon" type="image/x-icon" href="portfolio-assets/logo 32x32.png">
-        <title> IDM 241 - Alpha Description </title>
+        <title> IDM 241 - Alpha Build </title>
     </head>
 
     <body>
 
         <header>
-            <h1> IDM 241 - Alpha </h1>
+            <h1> IDM 241 - Alpha Build </h1>
             <p><em>Kaylie Nguyen</em> </p>
-            <div class="button">
-                <a href="https://www.figma.com/blog/" target="_blank">View the original interface</a>
-            </div>
             <p> Microinteraction: Search button</p>
         </header>
 
         <main>
+            <div id="microinter">
+                <img id="search-icon" class="bounce" src="../media/search-icon.png" alt="Search icon">
+            </div>
+
             <div id="content">
                 <div id="trigger">
                     <h2> Triggers </h2>
@@ -33,35 +34,37 @@
                 <div id="rules">
                     <h2> Rules</h2>
                     <ol>
-                        <li> When hover on: cursor turns into pointer</li>
+                        <li> When hover on: 
+                            <ul>
+                                <li> Cursor turns into pointer </li>
+                                <li> The Search button "jumps": it moves upward 16px then moves downward back to the original position</li>
+                                <li> The animation is 1 second long</li>
+                            </ul>
+                        </li>
                         <li> When hover off: pointer turns back into cursor</li>
                     </ol>
                 </div>
                 <div id="feedback">
                     <h2> Feedback</h2>
                     <ol>
-                        <li> When hover on: cursor turns into pointer</li>
+                        <li> When hover on: 
+                            <ul>
+                                <li> Cursor turns into pointer </li>
+                                <li> The Search button "jumps": it moves upward 16px then moves downward back to the original position</li>
+                                <li> The animation is 1 second long</li>
+                            </ul>
+                        </li>
                         <li> When hover off: pointer turns back into cursor</li>
                     </ol>
                 </div>
                 <div id="loop-mode">
                     <h2> Loops & Modes </h2>
                     <ol>
-                        <li> There is no loops or modes </li>
+                        <li> There is no loop or mode </li>
                     </ol>
                 </div>
             </div>
 
-            <div id="screenshot">
-                <figure>
-                    <img src="media/before-hover.png" alt="Before hover on the Search button">
-                    <figcaption> Before hover on the Search button</figcaption>
-                </figure>
-                <figure>
-                    <img src="media/hovering.png" alt="After click on the Search button">
-                    <figcaption> After hover on the Search button</figcaption>
-                </figure>
-            </div>
         </main>
     </body>
 
