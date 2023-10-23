@@ -27,14 +27,20 @@
                 <a href="index.html"><img id="logo" src="portfolio-assets/logo-white-on-blue-round.png" alt="Logo"></a>
                 <ul class="nav-menu">
                     <li>
-                        <a class="nav-link" href="index.html#projects"> Projects </a>
+                        <a class="nav-link" href="index.html#projects"> All Projects </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="ux-design.html"> UX Design </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="ux-research.html"> UX Research </a>
                     </li>
                     <li>
                         <a class="nav-link" href="portfolio-assets/kayliediepnguyen-resume.pdf" target="_blank"> Resume </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="nav-link" href="about.html"> About </a>
-                    </li>
+                    </li> -->
                     <!-- <li>
                         <a class="nav-link" href="contact.html"> Contact </a>
                     </li> -->
@@ -51,13 +57,28 @@
             <img class="callout hero-img" src="portfolio-assets/case-study-se-app/hero-img.jpg" alt="Final design of Sharing Excess app">
             <div>
                 <h1 id="cstudy-name"> Sharing Excess Wholesale App </h1>
-                <p id="cstudy-type"> Mobile App Design | UX Design | UX Research </p>
-                <p id="cstudy-time"> July 2023 - September 2023 </p>
                 <p id="cstudy-intro"> I <strong>redesigned the Wholesale mobile app</strong> of Sharing Excess - a nonprofit 
-                    addressing the pressing issue of food insecurity in the United States - to <strong>streamline their 
+                    addressing the issue of food insecurity in the United States - to <strong>streamline their 
                     process of working with input and output data</strong> in the warehouse, which significantly <strong>shortened 
-                    the process, minimized human errors, and increased workers' productivity.</strong> This experience also 
-                    marked as my first time leading UX of a business with a fellow UX designer.</p>
+                    the process, minimized human errors, and increased workers' productivity.</strong> </p>
+                <div id="prj-summary">
+                    <div>
+                        <h3> Project </h3>
+                        <p> Internship </p>
+                    </div>
+                    <div>
+                        <h3> Timeline</h3>
+                        <p> July - September 2023 </p>
+                    </div>
+                    <div>
+                        <h3> My role </h3>
+                        <p> UX Designer <br> UX Researcher </p>
+                    </div>
+                    <div>
+                        <h3> Team </h3>
+                        <p> Quinn - UX Designer <br> Shash - Developer <br> Victoria - Product Manager</p>
+                    </div>
+                </div>
                 <figure>
                     <img src="portfolio-assets/case-study-se-app/se-intro.jpg" title="Sharing Excess - a nonprofit addressing the issue of food insecuirty in the US" alt="Sharing Excess - a nonprofit addressing the issue of food insecuirty in the US">
                     <figcaption> Founded in Philadelphia in 2018, <a href="https://www.sharingexcess.com/">Sharing Excess</a> 
@@ -79,7 +100,8 @@
 
             <div>
                 <h2> <span class="sub-heading"> PROBLEM</span> <br>The existing Tool Didn't Do What It was Supposed to Do</h2>
-                <p> <strong>Conducting a Field Study and shadowing 3 Food Sourcing Associates</strong> of Sharing Excess through a typical workday in the warehouse, I identified <strong>problems with the company’s internal workspace platform</strong> - SE App: <strong> it didn't allow workers to record data in real time</strong> right in the warehouse, due to numerous shortcomings.</p>
+                <p> <strong>Sharing Excess app</strong> (or SE app) is the company's main workspace platform, and also the main tool that workers use to <strong>record data of the food collecting and distributing processes.</strong> </p>
+                <p> However, after <strong>conducting a Field Study and shadowing 3 Food Sourcing Associates</strong> through a typical workday in the warehouse, I concluded that <strong>SE app couldn't perform the most basic functions.</strong></p>
 
                 <div class="se-problem">
                     <div>
@@ -123,27 +145,16 @@
 
                 <div class="callout se-callout">
                     <div class="callout-text">
-                        <p>Seeing tons of other technical issues with the app, I learned that <strong><em> how the app 
-                        worked technically didn’t align with users’ work process</em></strong> in real time at all. It wasn't 
-                        designed to serve its users. </p>
+                        <p><strong><em> &rArr; How the app worked technically didn’t align with users’ work process</em></strong> </p>
                     </div>
                 </div>
-            </div>
-
-            <div>
-                <h2> <span class="sub-heading"> PROBLEM</span> <br>Workers had a Temporary Solution, but It Wasn't Optimal</h2>
-                <p class="margin-top-3rem"> Getting frustrated with the app, workers in the warehouse <strong>created a Google Sheets as their main working platform</strong> 
-                    in real time: add and organize every information they find important, use 
-                    formulas for calculation, sort/filter data, etc.</p>
-                <figure>
+                <p class="margin-top-3rem"> Getting frustrated with the app, workers in the warehouse <strong>created a Google Sheets document</strong> 
+                    to record data effectively in real time. However, at the end of the day, they still had to <strong>transfer data from the spreadsheet to the app,</strong> which didn't shorten the process.</p>
+                <!-- <figure>
                     <img class="width100" src="portfolio-assets/case-study-se-app/current-app/gg-sheet.jpg" alt="Workers use Google Sheets in place of the app">
                     <figcaption> Demo of their Google Sheets setup</figcaption>
-                </figure>
-                <p class="margin-top-4rem"> However, they also understood that they <strong>couldn't use this platform forever:</strong></p>
-                <ul>
-                    <li> The <strong>SE app is the main "workplace"</strong> of the whole company, as well as its donors and organizations. <strong>It can't be replaced.</strong> </li>
-                    <li> They still had to <strong>transfer data from the sheet to the app at the end of the day,</strong> which didn't shorten the process.</li>
-                </ul>
+                </figure> -->
+                
                 <figure>
                     <img class="width100" src="portfolio-assets/case-study-se-app/artifacts/current-user-process.jpg" title="Workers' original work process" alt="Workers' original work process">
                     <figcaption> Workers' original work process</figcaption>
@@ -158,17 +169,17 @@
             <div class="callout se-callout">
                 <div class="callout-text">
                     <h2> Problem Statement </h2>
-                    <p class="callout-leftalign"> The SE app is <strong>not a well-functioning and optimal</strong> all-in platform, therefore users have to <strong>utilize an external platform</strong> to do their work. This <strong>prolongs and overcomplicates</strong> the process, thus <strong>negatively affecting employees' work productivity and outcomes.</strong></p>
+                    <p class="callout-leftalign"> The SE app is <strong>not an optimal all-in platform,</strong> therefore users have to <strong>utilize an external platform</strong> to do their work. This <strong>prolongs and overcomplicates</strong> the process, thus <strong>negatively affecting employees' work productivity and outcomes.</strong></p>
                 </div>
             </div>
                 
             <div>
                 <h2><span class="sub-heading"> USER RESEARCH</span> <br> Listen to the Users' honest Thoughts</h2>
-                <p> After the Field Study with 3 Food Sourcing associates in warehouse, I still felt the need to have a more in-depth conversation with them to <strong>identify problems in detail and explore potential solutions.</strong> Thus, I set up a <strong>Focus Group and UX Workshop</strong> for all 3 workers to: </p>
+                <p> Feeling the need to have a more in-depth conversation with the workers and <strong>understand their needs and goals,</strong> I set up a <strong>Focus Group and UX Workshop</strong> for all 3 workers to: </p>
                 <ul>
-                    <li> <strong>List every problem</strong> with the work process and the app, and order them in terms of priority and urgency.</li>
+                    <li> <strong>List every problem</strong> with the work process and the app, and order them in terms of <strong>priority and urgency.</strong></li>
                     <li> <strong>Compare the pros and cons</strong> of SE app and Google Sheets </li>
-                    <li> <strong>Elaborate on their answers</strong> and <strong>brainstorm their ideal solutions.</strong></li>
+                    <li> <strong>Brainstorm their ideal solutions</strong></li>
                 </ul>
                 <div class="column-3-img callout">
                     <img src="portfolio-assets/case-study-se-app/workshop/IMG_6188.JPG" title="Users doing whiteboard exercises" alt="Users doing whiteboard exercises">
@@ -195,11 +206,11 @@
             <div>
                 <h2> <span class="sub-heading"> PROCESS</span> <br> Overview of Design Iterations </h2>
                 <img class="width100" src="portfolio-assets/case-study-se-app/artifacts/design-process.jpg" alt="Overview of design process">
-                <p> The workers' Food Sourcing process was complicated, and <strong>our design process wasn't linear</strong> either. 
+                <!-- <p> The workers' Food Sourcing process was complicated, and <strong>our design process wasn't linear</strong> either. 
                     Sometimes one problem was solved but then another one arose.</p>
                 <p> The <strong>biggest challenge</strong> lied in <strong>communicating with users</strong> to thoroughly understand their 
                     process and frustrations, and <strong>communicating with developers</strong> to ensure 
-                    our intentions behind every design decision would be conveyed in the app.</p>
+                    our intentions behind every design decision would be conveyed in the app.</p> -->
             </div>
 
             <div>
