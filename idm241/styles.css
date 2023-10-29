@@ -51,6 +51,10 @@ figure, #microinter {
     margin: 3rem auto;
 }
 
+#beta-img {
+    margin: 4rem 2rem auto 2rem;
+}
+
 
 /* Alpha build: Functional microinteraction */
 
@@ -87,7 +91,7 @@ figure, #microinter {
         column-gap: 1rem;
         margin: auto 2rem;
     }
-    #content, #screenshot {
+    #content, #screenshot, #beta-img {
         max-width: 1200px;
     }
     #screenshot {
@@ -102,5 +106,8 @@ figure, #microinter {
 @media screen and (min-width: 1200px) {
     #content, figure {
         margin: 3rem auto;
+    }
+    #beta-img {
+        margin: auto;
     }
 }
