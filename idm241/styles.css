@@ -1,6 +1,6 @@
 html {
-    /* background-color: #fef8ed; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 2rem;
 }
 
 header, figcaption {
@@ -55,8 +55,9 @@ figure, #microinter {
     margin: 4rem 2rem auto 2rem;
 }
 
-
+/* //////////////////// */
 /* Alpha build: Functional microinteraction */
+/* ///////////////////////// */
 
 #microinter {
     background-color: black;
@@ -65,7 +66,7 @@ figure, #microinter {
     padding: 2rem;
 }
 
-#search-icon:hover {
+img.search-icon:hover {
     cursor: pointer;
     animation-name: jumping;
     animation-duration: .5s;
@@ -75,12 +76,86 @@ figure, #microinter {
 
 @keyframes jumping{
     0%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-1.5rem);}
+    40% {transform: translateY(-1rem);}
+}
+
+/* /////////////////////// */
+/* Beta Build */
+/* /////////////////////// */
+
+button, input[type="text"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+    font-size: 1.5rem;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.search-wrap {
+    background-color: black;
+    color: white;
+    padding: 2rem 0 2rem 1rem;
+    width: 100%;
+}
+
+.search {
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+}
+
+.search-text {
+    position: relative;
+    width: 90%;
+}
+
+input[type="text"] {
+    border: none;
+	border-bottom: 1px solid white;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 105%;
+    opacity: 0;
+    transition-duration: 350ms;
+}
+
+input[type="text"].searchExpand {
+    left: 0%;
+    opacity: 100%;
+
+    transition-duration: 350ms;
+}
+
+button {
+    width: 8%;
+}
+
+img.search-click {
+    z-index: 2;
+}
+
+@media screen and (min-width: 550px) {
+    .search-text {
+        width: 92%;
+    }
+    button {
+        width: 6%;
+    }
 }
 
 @media screen and (min-width: 700px) {
     #content > div {
         margin: 2rem auto auto auto;
+    }
+    .search-text {
+        width: 94%;
+    }
+    button {
+        width: 4%;
     }
 }
 
@@ -100,6 +175,15 @@ figure, #microinter {
     }
     #microinter {
         padding: 3rem;
+    }
+    .search-text {
+        width: 96%;
+    }
+    button {
+        width: 3%;
+    }
+    input[type="text"] {
+        font-size: 2rem;
     }
 }
 
