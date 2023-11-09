@@ -624,6 +624,10 @@ div.callout-text {
     margin-top: .75rem;
 }
 
+h4 {
+    font-family: var(--nunito-extra-bold);
+}
+
 .ramen-h3 {
     background-color: var(--warm-100);
     border-radius: 1rem;
@@ -879,7 +883,7 @@ input[type=text], #message {
     #ramen-sketch {
         display: flex;
         column-gap: 3rem;
-        align-items: flex-start;
+        align-items:center;
         align-content: flex-start;
     }
     div.photo-strip-4 img {
