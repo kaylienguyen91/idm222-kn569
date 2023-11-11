@@ -99,6 +99,7 @@ button, input[type="text"] {
     color: white;
     padding: 2rem 0 2rem 1rem;
     width: 100%;
+    margin-bottom: 4rem;
 }
 
 .search {
