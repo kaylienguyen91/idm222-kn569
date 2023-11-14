@@ -254,7 +254,7 @@ footer {
 
 /* Homepage CSS styles (for index.html) */
 
-#home-intro {
+#home-intro-fullwidth {
     background-color: var(--blue-10);
     padding-top: .25rem;
     /* margin-top: 1rem; */
@@ -266,7 +266,7 @@ footer {
     margin: 1rem auto;
 }
 
-#home-intro > div {
+#home-intro-text {
     margin: 0 1.5rem;
 }
 
@@ -677,10 +677,10 @@ input[type=text], #message {
 @media screen and (min-width: 600px) {
     
     /* home page */
-    #home-intro {
+    #home-intro-fullwidth {
         padding: .5rem 0;
     }
-    #home-intro > div {
+    #home-intro-text {
         margin: 0 3.5rem;
     }
     #projects {
@@ -788,13 +788,12 @@ input[type=text], #message {
     .nav-wrapper {
         margin: 0 6rem;
     }
-    #home-intro {
+    #home-intro-wrapper {
         display: flex;
-        padding: 1rem 3rem;
         column-gap: 1.5rem;
         align-items: center;
     }
-    #home-intro > div {
+    #home-intro-text {
         margin: 0;
         max-width: 40rem;
     }
@@ -1001,9 +1000,8 @@ input[type=text], #message {
 }
 
 @media screen and (min-width: 1100px) {
-    #home-intro {
-        padding: 2rem 5rem;
-        column-gap: 2rem;
+    #home-intro-fullwidth {
+        padding: 2rem 0;
     }
     #projects {
         margin: 2rem 5rem 0 5rem;
@@ -1145,8 +1143,11 @@ input[type=text], #message {
 }
 
 @media screen and (min-width: 1280px) {
-    .nav-wrapper {
-        margin: 0 8rem;
+    #projects, .nav-wrapper, #home-intro-wrapper {
+        max-width: 1100px;
+    }
+    .nav-wrapper, #home-intro-wrapper {
+        margin: auto;
     }
     .main-content {
         margin: 96px auto auto auto;
@@ -1157,32 +1158,10 @@ input[type=text], #message {
     #intro-tags p {
         margin: 0.5rem;
     }
-    #home-intro {
-        padding: 2rem 6rem;
-    }
     #projects {
-        margin: 2rem 6rem 0 6rem;
+        margin: 6rem auto;
     }
     #projects img {
         width: 45%;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    #intro-tags {
-        display: flex;
-        flex-direction: column;
-    }
-    #intro-tags p {
-        width: fit-content;
-    }
-    p, .view-button {
-        font-size: 1.2rem;
-    }
-    #home-intro {
-        column-gap: 3rem;
-    }
-    #home-cstudy-grid > div > div {
-        padding: 1rem 4rem;
     }
 }
