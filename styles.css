@@ -689,9 +689,6 @@ input[type=text], #message {
     #home-cstudy-grid > div > div {
         padding: 1rem 1.3rem;
     }
-    #homepage-headshot {
-        width: 40%;
-    }
     #home-cstudy-grid > div {
         margin-top: 2.5rem;
     }
@@ -758,6 +755,9 @@ input[type=text], #message {
         column-gap: 1rem;
         margin: 0;
     }
+    #homepage-headshot {
+        width: 50%;
+    }
     #projects {
         margin: 2rem 6.5rem 0 6.5rem;
         padding-top: 6rem;
@@ -792,10 +792,14 @@ input[type=text], #message {
         display: flex;
         column-gap: 1.5rem;
         align-items: center;
+        margin: auto 3.5rem;
     }
     #home-intro-text {
         margin: 0;
         max-width: 40rem;
+    }
+    #homepage-headshot {
+        width: 35%;
     }
     #form-flex div {
         width: 50%;
