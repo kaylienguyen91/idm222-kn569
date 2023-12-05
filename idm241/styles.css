@@ -131,7 +131,7 @@ input[type="text"] {
     width: 100%;
     z-index: 1;
     position: absolute;
-    left: 105%;
+    left: 115%;
     opacity: 0;
     transition-duration: 350ms;
 }
@@ -192,6 +192,7 @@ img.search-click {
 }
   .nav-bar li:hover {
     font-weight: bold;
+    cursor: default;
   }
   #nav1:hover {
     color: #F24E1E;
@@ -254,6 +255,9 @@ img.search-click {
     button {
         width: 9%;
     }
+    input[type="text"] {
+        left: 110%;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -296,6 +300,7 @@ img.search-click {
     }
     input[type="text"] {
         font-size: 2rem;
+        left: 106%;
     }
     #search-gif {
         width: 20%;
