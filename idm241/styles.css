@@ -39,7 +39,7 @@ a:hover {
     color: white;
 }
 
-#content > div {
+#content > div, #cstudy-intro {
     border: 3px dashed #FFBF47;
     border-radius: 1rem;
     margin: 2rem 1rem auto 1rem;
@@ -261,7 +261,7 @@ img.search-click {
 }
 
 @media screen and (min-width: 700px) {
-    #content > div {
+    #content > div, #cstudy-intro {
         margin: 2rem auto auto auto;
     }
     .search-text {
