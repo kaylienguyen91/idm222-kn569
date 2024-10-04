@@ -164,7 +164,7 @@ h2.project-name, .button-div, .nav-menu, #page-title, #cstudy-name, #cstudy-type
     margin-top: 2rem;
 }
 
-#project-se h3 {
+#project-msft h3, #project-se h3 {
     text-align: left;
 }
 
@@ -179,6 +179,16 @@ figcaption, .code-caption {
     padding: 1rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+div#cstudy-intro {
+    max-width: 50rem;
+    margin: 1.5rem auto;
+    padding-bottom: .25rem;
+}
+
+div#cstudy-intro p {
+    margin: 0;
 }
 
 #cstudy-outro {
@@ -512,10 +522,24 @@ img {
     margin: auto;
 }
 
+.round-border-1 {
+    border-radius: 1rem;
+}
+
+/* Project MSFT */
+
+#project-msft #cstudy-intro, #project-msft #cstudy-outro, #project-msft div.callout {
+    background-color: var(--blue-10);
+}
+
+#project-msft span.sub-heading, #project-msft .callout h2, #project-msft .blue-text {
+    color: var(--blue-40);
+}
+
 /* Project SE app */
 
-#project-se h1, #project-ramen h1 {
-    margin-top: 4rem;
+.project-page h1 {
+    margin: 4rem auto;
 }
 
 #project-se #cstudy-intro, #se #cstudy-outro, .se-callout {
@@ -1034,7 +1058,7 @@ input[type=text], #message {
     .project-page h2 {
         margin: 6rem 0 3rem 0;
     }
-    #home-cstudy-grid > div, p.margin-top-3rem, .callout h2  {
+    p.margin-top-3rem, .callout h2  {
         margin-top: 3rem;
     }
     #home-cstudy-grid > div > div {
@@ -1070,6 +1094,9 @@ input[type=text], #message {
     }
     div.margin-top-4rem, p.margin-top-4rem, h3.margin-top-4rem, img.margin-top-4rem {
         margin-top: 4rem;
+    }
+    .margin-top-6rem, #home-cstudy-grid > div {
+        margin-top: 6rem;
     }
     div.callout-text {
         margin: auto;
@@ -1164,6 +1191,12 @@ input[type=text], #message {
     }
     div.impact {
         margin: 2rem auto;
+    }
+    .grid-2-1 {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        padding-right: 4rem;
+        margin-bottom: 6rem;
     }
 }
 
