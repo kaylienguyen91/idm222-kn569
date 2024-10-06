@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9WX39MLYW"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-H9WX39MLYW');
+        </script>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="portfolio-assets/logo 32x32.png">
+        <title> Kaylie Nguyen - Azure for Students </title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="nav-wrapper">
+                <a href="index.html"><img id="logo" src="portfolio-assets/logo-white-on-blue-round.png" alt="Logo"></a>
+                <ul class="nav-menu">
+                    <li>
+                        <a class="nav-link" href="index.html#projects"> Work </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="playground.html"> Playground </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="portfolio-assets/kayliediepnguyen-resume.pdf" target="_blank"> Resume </a>
+                    </li>
+                    <!-- <li>
+                        <a class="nav-link" href="about.html"> About </a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="nav-link" href="contact.html"> Contact </a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+
+        <main class="main-content project-page" id="project-msft">
+            <img class="callout hero-img" src="portfolio-assets/case-study-msft/msft-thumbnails/thumbnail.jpg" alt="Microsoft Azure and Copilot">
+            <div>
+                <h1 id="cstudy-name"> Azure for Students experience </h1>
+                <div id="cstudy-intro"> 
+                    <p> During my internship at Microsoft, I joined the Cloud Experience Studio - Azure Core and was working on: </p>
+                    <ol>
+                        <li> Revamping the navigation and interface of the Azure for Students platform to increase 
+                            user activities and engagement of student developers around the world.</li>
+                        <li> Designing a new feature for the platform - Customized study plan - to support students 
+                            who are new to cloud computing. </li>
+                    </ol>
+                </div>
+                <div class="prj-summary">
+                    <div>
+                        <h3> Project </h3>
+                        <p> Internship </p>
+                    </div>
+                    <div>
+                        <h3> Timeline</h3>
+                        <p> June - September 2024 </p>
+                    </div>
+                    <div>
+                        <h3> My role </h3>
+                        <p class="margin-bot-05"> Design Intern/ UX Lead (UX Design, UI Design, UX Research) </p>
+                    </div>
+                    <div>
+                        <h3> Collaborators </h3>
+                        <p> Product Manager <br> Content Designer </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div>
+                <h2> <span class="sub-heading"> CONTEXT</span> <br> What is Azure for Students (A4S)? </h2>
+                <p> <a href="https://azure.microsoft.com/en-us/free/students" target="_blank"><u>Azure for Students</u></a> (A4S) program, part of the Education Hub on Microsoft Azure portal, was 
+                    created specifically for student users, providing them with:</p>
+                <ul>
+                    <li> Free Azure credits </li>
+                    <li> Free access to Azure services </li>
+                    <li> Free learning paths on cloud computing </li>
+                </ul>
+                <p> The goal of Azure for Students is to: </p>
+                <picture>
+                    <source media="(max-width: 700px)" srcset="portfolio-assets/case-study-msft/artifacts/a4s-goals-mobile.jpg">
+                    <img src="portfolio-assets/case-study-msft/artifacts/a4s-goals-desktop.jpg" title="The goals of Azure for Students" alt="The goals of Azure for Students">
+                </picture>
+            </div>
+
+            <div>
+                <h2> <span class="sub-heading"> PROBLEM</span> <br>A4S wasn’t intuitive for <u>student</u> users, especially beginners in cloud computing</h2>
+                <!-- <p> Despite being created for students, the platform wasn’t the easiest to use from their perspective. </p> -->
+                <p> I conducted a <strong> survey with 130+ college students</strong> to understand their background 
+                    and needs, then analyzed <strong> Net Promoter Score (NPS) and comments from 1000+ users</strong> 
+                    on A4S to learn about their experience, pain points, and expectations. </p>
+                <p> Students often encountered two main problems on the platform.</p>
+                <img class="width100" src="portfolio-assets/case-study-msft/artifacts/problem-quotes.jpg" alt="Users' problems with A4S">
+                <!-- <ul>
+                    <li> Students with little to no experience with cloud computing said that their biggest challenge 
+                        was <strong> not knowing where to start or what to learn first.</strong></li>
+                    <li> Current A4S users <strong> felt overwhelmed </strong> by the large amount of content 
+                        and <strong> had difficulty navigating the platform.</strong></li>
+                </ul> -->
+            </div>
+
+            <div class="callout se-callout margin-top-4rem">
+                <div class="callout-text">
+                    <h2> How Might We...</h2>
+                    <img class="width100" src="portfolio-assets/case-study-msft/artifacts/howmightwe.png" alt="Illustration of the problem statement">
+                </div>
+            </div>
+
+            <div>
+                <h2> <span class="sub-heading"> DESIGN SOLUTION #1</span> <br>Redesigning the website hierarchy and navigation</h2>
+                <h3> 1. What did I focus on solving? </h3>
+                <p> To make the platform easier to scan through, I decided to <strong> focus on redesigning the navigation bar and Overview page (homepage),</strong> since the first page users see after logging into their account often determines how 
+                    they navigate the rest of the platform.</p>
+                <p> Some key pain points of the original designs are: </p>
+                <ul>
+                    <li> Overwhelming amount of content </li>
+                    <li> Unclear content structure </li>
+                    <li> Confusing naming convention </li>
+                </ul>
+                <h3 class="margin-top-4rem"> 2. How did I solve these design problems? </h3>
+                <!-- <p> I conducted <strong> card sorting exercises with 5 student users </strong>to learn 
+                    how they’d like to organize and label the content, then created a new version of the navigation bar. </p> -->
+                <img class="width100 imgModal" src="portfolio-assets/case-study-msft/artifacts/design-process-1.jpg" alt="My process of redesigning the Overview page">
+                <h3 class="margin-top-4rem"> 3. What did the outcome look like? </h3>
+                <picture>
+                    <source media="(max-width: 700px)" srcset="portfolio-assets/case-study-msft/artifacts/navbar-design-mobile.png">
+                    <img class="width100 imgModal" src="portfolio-assets/case-study-msft/artifacts/navbar-design-desktop.png" alt="Original design vs. New design of A4S's navigation bar">
+                </picture>
+
+            </div>
+
+            <div>
+                <h2> <span class="sub-heading"> DESIGN SOLUTION #2</span> <br>Leveraging AI to create a new feature - Customized Study Plan</h2>
+                <div>
+                    <h3> 1. Why Customized Study Plan? </h3>
+                    <div class="grid-2-1">
+                        <div>
+                            <p> Although A4S has been able to suggest some
+                                popular learning content for students on its Overview page, there are no one-size-fits-all 
+                                recommendations, and many students new to cloud computing still struggle to decide what to learn.</p>
+                            <p> Personalized suggestions could: </p>
+                            <ul>
+                                <li> Cater to each individual user’s needs and preferences</li>
+                                <li> Provide more relevant learning suggestions </li>
+                            </ul>
+                            <!-- <p> <strong> &rArr; Empowers students to learn to use Azure services</strong> </p>
+                            <p> <strong> &rArr; Increases user activities and user engagement with the platform</strong> </p> -->
+                        </div>
+                        <img src="portfolio-assets/case-study-msft/artifacts/customized-plan.png" alt="Icon: Customization/Personalization">
+                    </div>
+                    <div class="callout se-callout">
+                        <div class="callout-text">
+                            <p> <strong> &rArr; Empowers students to learn to use Azure services</strong> </p>
+                            <p> <strong> &rArr; Increases user activities and user engagement with the platform</strong> </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="margin-top-6rem"> 2. Why AI? How could it be helpful? </h3>
+                    <div class="grid-2column">
+                        <img class="round-border-1" src="portfolio-assets/case-study-msft/msft-thumbnails/copilot-4.jpg" alt="Microsoft Copilot logo">
+                        <div>
+                            <p> Based on my secondary research, AI has the potential to create personalized experiences for users by: </p>
+                            <ul>
+                                <li> <strong> Tracking users' learning history</strong> to provide resources that help advance their learning paths </li>
+                                <li> <strong> Evaluating users’ performance and engagement</strong> on A4S to suggest tools and learning content that keep them motivated </li>
+                                <li> <strong> Collecting feedback from users</strong> on their current study plans and enhance them</li>
+                            </ul>
+                            <p> Integrating Microsoft Copilot AI assistant into the A4S platform will also help <strong> embrace the new era of AI driven by Microsoft.</strong> </p>
+                        </div>
+                    </div>
+                    <!-- <img class="width100" src="portfolio-assets/case-study-msft/artifacts/ai-potentials.jpg" alt="Potentials of AI (Microsoft Copilot) in customizing study plans for students"> -->
+                </div>
+                <div>
+                    <h3 class="margin-top-6rem"> 3. What was my design process?</h3>
+                    <p> Since I was working on a brand-new feature and it was my first time designing for AI,
+                        I went through a fun but challenging process of <strong> learning and designing simultaneously.</strong></p>
+                    <img class="width100" src="portfolio-assets/case-study-msft/artifacts/design-process-2.jpg" alt="My process of designing the Customized Study Plan feature">
+                    <p> <em> *Details about the AI implementation in this feature cannot be disclosed due to a Non-disclosure Agreement.</em></p>
+                </div>
+            </div>
+
+            <div>
+                <h2> <span class="sub-heading"> IMPACT & FEEDBACK</span> <br>Students are excited to see the new design launch </h2>
+                <p> Although the new design and features haven't been implemented or shipped yet, the usability testing sessions I conducted with users indicate that we can expect significant impact from the improvements.</p>
+                <div class="grid-2column">
+                    <div class="impact">
+                        <p class="big-number"> ~ 200,000 students</p>
+                        <p class="impact-text"> around the world will <strong> be impacted by the design improvements.</strong> </p>
+                    </div>
+                    <div class="impact">
+                        <p class="big-number"> 2:14 mins</span> &rArr; 35s</p>
+                        <p class="impact-text"> Users will <strong> spend less time navigating and figuring out the new Overview page</strong> than the original page. </p>
+                    </div>
+                    <div class="impact">
+                        <p class="big-number"> 100% users </p>
+                        <p class="impact-text"> who tested the new design (6 out of 6 users) <strong> expressed excitement </strong>about the new Customized Study Plan feature and <strong> indicated that they would use it</strong> once it’s launched.</p>
+                    </div>
+                    <div class="impact">
+                        <p class="big-number"> &uArr; 5-10 NPS points</p>
+                        <p class="impact-text"> Net Promoter Score (NPS) of A4S is expected to increase after the design implementation, as the <strong> user satisfaction</strong> on the platform is also <strong> expected to be improved.</strong> </p>
+                    </div>
+                </div>
+                <img class="width100" src="portfolio-assets/case-study-msft/artifacts/feedback-quotes.jpg" alt="Users' positive feedback on the new design">
+                <p> My final presentation on the project also received positive feedback and recognition from the Vice President of the Cloud Experience Studio, as well as other senior and principal designers/researchers, which was a great honor and a motivation for me to keep moving forward.</p>
+            </div>
+
+            <div>
+                <h2> <span class="sub-heading"> REFLECTION</span> <br>What I learned over the project</h2>
+                <h3 class="margin-top-4rem"> 1. Put myself into users’ shoes</h3>
+                <p>To solve complex problems of the app, I had to work closely with the users, and even build a relationship with them. User research is not only setting up an interview with people, but also <strong>“visiting” them and observing their frustrations in real life.</strong></p>
+                <h3 class="margin-top-4rem"> 2. Evaluate my design decisions from multiple perspectives</h3>
+                <p> Every time testing my designs with the workers, I also handed them off to stakeholders and developers. They would let me know if the design was codable or if it might cause any problem.</p>
+                <h3 class="margin-top-4rem"> 3. Take the initiative and Learn along the way</h3>
+                <p> I was nervous to know that another intern and I would be the only designers of the company. I read more books, consulted other UX professionals, and self-studied to gain confidence. Thus I soon worked my way out and took control of the project.</p>                </p>
+            </div>
+                
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div id="footer-intro">
+                <p> Kaylie is a UI/UX designer and researcher based in Philadelphia, Pennsylvania. </p>
+                <a id="resume" href="portfolio-assets/kayliediepnguyen-resume.pdf" target="_blank"> View my resume </a>
+            </div>
+            <div id="contact">
+                <div id="contact-icons">
+                    <a id="linkedin" href="https://www.linkedin.com/in/kaylie-diep-nguyen" target="_blank"><img src="portfolio-assets/linkedin-whitecircle.png" alt="My LinkedIn profile"> </a> <br>
+                    <a id="email" href="mailto:kaylie.diep.nguyen@gmail.com"><img src="portfolio-assets/email-whitecircle.png" alt="My email address"></a> <br>
+                    <a id="github" href="https://github.com/kaylienguyen91" target="_blank"><img src="portfolio-assets/github.png" alt="My GitHub profile"></a>
+                </div>
+                <a href="mailto:kaylie.diep.nguyen@gmail.com"> kaylie.diep.nguyen@gmail.com </a> <br>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+
+    </body>
+
+</html>

@@ -475,6 +475,10 @@ p.big-number {
     margin-bottom: .5rem;
 }
 
+#project-msft p.big-number {
+    color: #286ED7;
+}
+
 p.intro-impact {
     font-size: 120%;
 }
@@ -1196,7 +1200,7 @@ input[type=text], #message {
         display: grid;
         grid-template-columns: 3fr 1fr;
         padding-right: 4rem;
-        margin-bottom: 6rem;
+        column-gap: 3rem;
     }
 }
 
