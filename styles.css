@@ -213,6 +213,11 @@ h3 {
     font-size: 1.3rem;
 }
 
+h4 {
+    font-family: var(--nunito-bold);
+    font-size: 1.15rem;
+}
+
 p {
     margin: .75rem 0;
 }
@@ -507,6 +512,7 @@ span.sub-heading {
 div.photo-strip-4 {
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
 }
 
 div.photo-strip-4 img {
@@ -1201,6 +1207,12 @@ input[type=text], #message {
         grid-template-columns: 3fr 1fr;
         padding-right: 4rem;
         column-gap: 3rem;
+    }
+    .grid-1-2 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding-left: 3rem;
+        column-gap: 5rem;
     }
 }
 
