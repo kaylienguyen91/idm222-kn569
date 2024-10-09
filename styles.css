@@ -269,6 +269,10 @@ footer {
 
 /* Homepage CSS styles (for index.html) */
 
+.animation_text span {
+    color: #995CA5;
+}
+
 #home-intro-fullwidth {
     background-color: var(--blue-10);
     padding-top: .25rem;
@@ -1068,7 +1072,7 @@ input[type=text], #message {
     .project-page h2 {
         margin: 6rem 0 3rem 0;
     }
-    p.margin-top-3rem, .callout h2  {
+    .margin-top-3rem, .callout h2  {
         margin-top: 3rem;
     }
     #home-cstudy-grid > div > div {
