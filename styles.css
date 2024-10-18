@@ -1188,6 +1188,12 @@ input[type=text], #message {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2rem;
     }
+    #project-msft .column-3 img, #project-msft .grid-2column img {
+        width: 100%;
+    }
+    #project-msft .grid-2column {
+        column-gap: 2rem;
+    }
     #ramen-wrapper1 {
         flex-direction: row;
         justify-content: space-around;
